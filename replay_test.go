@@ -7,9 +7,9 @@ import (
 )
 
 var (
-	testReplay1 = "replay1.json"
-	testReplay2 = "replay2.json"
-	testReplay3 = "replay3.json"
+	testReplay1 = "testdata/replay1.json"
+	testReplay2 = "testdata/replay2.json"
+	testReplay3 = "testdata/replay3.json"
 	testEmpty   = "empty.json"
 )
 
