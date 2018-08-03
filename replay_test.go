@@ -7,11 +7,23 @@ import (
 )
 
 var (
-	testReplay1 = "testdata/replay1.json"
-	testReplay2 = "testdata/replay2.json"
-	testReplay3 = "testdata/replay3.json"
-	testEmpty   = "empty.json"
+	testFile1     = "testdata/replay1.json"
+	testFile2     = "testdata/replay2.json"
+	testFile3     = "testdata/replay3.json"
+	testFileEmpty = "testdata/empty.json"
 )
+
+// assertError fails the test if the given error does not match the expected
+// outcome provided by the exp bool.
+func assertError(t *testing.T, err error, exp bool) {
+	if exp && err == nil {
+		t.Fatalf("got: <%v>, want: <error>", err)
+	}
+
+	if !exp && err != nil {
+		t.Fatalf("got: <%v>, want: <nil>", err)
+	}
+}
 
 func TestParse(t *testing.T) {
 	var cases = []struct {
@@ -22,25 +34,25 @@ func TestParse(t *testing.T) {
 	}{
 		{
 			"Success: replay 1",
-			testReplay1,
+			testFile1,
 			Replay{Code: "ib0Qt-pp8PL", EndTime: 1521092570.323161},
 			false,
 		},
 		{
 			"Success: replay 2",
-			testReplay2,
+			testFile2,
 			Replay{Code: "VyrET-IGxyL", EndTime: 1532955756.487255},
 			false,
 		},
 		{
 			"Success: replay 3",
-			testReplay3,
+			testFile3,
 			Replay{Code: "yjUKQ-HzFRz", EndTime: 1533169252.757027},
 			false,
 		},
 		{
 			"Error: empty",
-			testEmpty,
+			testFileEmpty,
 			Replay{Code: "fake-code", EndTime: 123.456},
 			true,
 		},
@@ -114,6 +126,51 @@ func TestDuration(t *testing.T) {
 	}
 }
 
-// func TestReplayDuration(t *testing.T) {
+func TestReplayDuration(t *testing.T) {
+	var cases = []struct {
+		name string
+		r    Replay
+		exp  time.Duration
+		fail bool
+	}{
+		{
+			"Success: replay 1",
+			Replay{StartTime: 1521091944.949862, EndTime: 1521092570.323161},
+			(time.Minute * 10) + (time.Second * 26),
+			false,
+		},
+		{
+			"Success: replay 2",
+			Replay{StartTime: 1532955317.245488, EndTime: 1532955756.487255},
+			(time.Minute * 7) + (time.Second * 19),
+			false,
+		},
+		{
+			"Success: replay 3",
+			Replay{StartTime: 1533168612.190871, EndTime: 1533169252.757027},
+			(time.Minute * 10) + (time.Second * 40),
+			false,
+		},
+		{
+			"Failure: empty",
+			Replay{StartTime: 0, EndTime: 0},
+			(time.Second * 0),
+			true,
+		},
+	}
 
-// }
+	for _, tt := range cases {
+		t.Run(tt.name, func(t *testing.T) {
+			d, err := tt.r.Duration()
+
+			assertError(t, err, tt.fail)
+			if tt.fail {
+				return
+			}
+
+			if d != tt.exp {
+				t.Errorf("got: <%v>, want <%v>", d, tt.exp)
+			}
+		})
+	}
+}

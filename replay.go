@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"errors"
 	"io"
 	"time"
 )
@@ -157,9 +158,15 @@ func duration(a, b time.Time) time.Duration {
 }
 
 // Duration returns the duration of the replay in seconds.
-func (r *Replay) Duration() time.Duration {
+func (r *Replay) Duration() (time.Duration, error) {
+	if r.StartTime == 0 {
+		return 0, errors.New("missing start time")
+	}
+	if r.EndTime == 0 {
+		return 0, errors.New("missing end time")
+	}
 	start := time.Unix(int64(r.StartTime), 0)
 	end := time.Unix(int64(r.EndTime), 0)
 
-	return duration(start, end)
+	return duration(start, end), nil
 }
