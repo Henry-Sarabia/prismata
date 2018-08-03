@@ -41,7 +41,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	replay, err := parse(bytes.NewBuffer(raw))
+	replay, err := Decode(bytes.NewBuffer(raw))
 	if err != nil {
 		log.Fatal(err)
 	}

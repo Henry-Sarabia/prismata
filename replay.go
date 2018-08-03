@@ -9,20 +9,20 @@ import (
 
 // Replay contains information on the replay of a Prismata match.
 type Replay struct {
-	Code         string   `json:"code"`
-	DeckInfo     Deck     `json:"deckInfo"`
-	EndCondition int      `json:"endCondition"`
-	Format       int      `json:"format"`
-	RawHash      int      `json:"rawHash"`
-	PlayerInfo   []Player `json:"playerInfo"`
+	Code          string   `json:"code"`
+	StartTimeUnix float64  `json:"startTime"`
+	EndTimeUnix   float64  `json:"endTime"`
+	DeckInfo      Deck     `json:"deckInfo"`
+	PlayerInfo    []Player `json:"playerInfo"`
 	// CommandInfo  CmdInfo    `json:"commandInfo"`
-	TimeInfo    TimeInfo   `json:"timeInfo"`
-	Result      int        `json:"result"`
-	StartTime   float64    `json:"startTime"`
-	VersionInfo Version    `json:"versionInfo"`
-	Seed        int        `json:"seed"`
-	RatingInfo  RatingInfo `json:"ratingInfo"`
-	EndTime     float64    `json:"endTime"`
+	TimeInfo     TimeInfo   `json:"timeInfo"`
+	RatingInfo   RatingInfo `json:"ratingInfo"`
+	Result       int        `json:"result"`
+	VersionInfo  Version    `json:"versionInfo"`
+	Seed         int        `json:"seed"`
+	EndCondition int        `json:"endCondition"`
+	Format       int        `json:"format"`
+	RawHash      int        `json:"rawHash"`
 }
 
 // Deck represents a collection of units.
@@ -35,33 +35,33 @@ type Deck struct {
 
 // Unit represents a single deployable unit of play.
 type Unit struct {
-	BaseSet int    `json:"baseSet,omitempty"`
 	Name    string `json:"name"`
 	UIName  string `json:"UIName,omitempty"`
+	BaseSet int    `json:"baseSet,omitempty"`
 }
 
 // Player contains information on a participating agent in a Prismata replay.
 type Player struct {
-	DisplayName      string   `json:"displayName"`
 	Name             string   `json:"name"`
-	LoadingCompleted bool     `json:"loadingCompleted"`
-	Bot              string   `json:"bot"`
-	Trophies         []string `json:"trophies"`
+	DisplayName      string   `json:"displayName"`
 	ID               int      `json:"id"`
-	PercentLoaded    float64  `json:"percentLoaded"`
+	Bot              string   `json:"bot"`
 	AvatarFrame      string   `json:"avatarFrame"`
 	Portrait         string   `json:"portrait"`
+	Trophies         []string `json:"trophies"`
+	LoadingCompleted bool     `json:"loadingCompleted"`
+	PercentLoaded    float64  `json:"percentLoaded"`
 }
 
 // CmdInfo contains information on the sequence of commands executed by players
 // in a Prismata replay. Multiple commands are executed per turn.
 type CmdInfo struct {
-	TimesRemaining     []int     `json:"timesRemaining"`
-	TimeBanksRemaining []float64 `json:"timeBanksRemaining"`
-	MoveDurations      []float64 `json:"moveDurations"`
 	CommandList        []Cmd     `json:"commandList"`
 	CommandTimes       []float64 `json:"commandTimes"`
 	CommandForced      []bool    `json:"commandForced"`
+	TimesRemaining     []int     `json:"timesRemaining"`
+	TimeBanksRemaining []float64 `json:"timeBanksRemaining"`
+	MoveDurations      []float64 `json:"moveDurations"`
 	ClicksPerTurn      []int     `json:"clicksPerTurn"`
 }
 
@@ -111,10 +111,10 @@ type Version struct {
 
 // RatingInfo contains information about the ratings of players in a Prismata replay.
 type RatingInfo struct {
-	ScoreChanges   []int       `json:"scoreChanges"`
+	InitialRatings []Rating    `json:"initialRatings"`
 	FinalRatings   []Rating    `json:"finalRatings"`
 	RatingChanges  [][]float64 `json:"ratingChanges"`
-	InitialRatings []Rating    `json:"initialRatings"`
+	ScoreChanges   []int       `json:"scoreChanges"`
 }
 
 // Rating contains information on a player's rating at the time of the Prismata replay.
@@ -137,13 +137,28 @@ type Rating struct {
 	BotGamesPlayed      int     `json:"botGamesPlayed"`
 }
 
-func parse(r io.Reader) (*Replay, error) {
+// Decode reads from the provided reader and decodes the JSON into a Replay.
+func Decode(r io.Reader) (*Replay, error) {
 	rep := &Replay{}
 	if err := json.NewDecoder(r).Decode(rep); err != nil {
 		return nil, err
 	}
 
 	return rep, nil
+}
+
+// Duration returns the duration of the replay.
+func (r *Replay) Duration() (time.Duration, error) {
+	if r.StartTimeUnix == 0 {
+		return 0, errors.New("missing start time")
+	}
+	if r.EndTimeUnix == 0 {
+		return 0, errors.New("missing end time")
+	}
+	start := r.StartTime()
+	end := r.EndTime()
+
+	return duration(start, end), nil
 }
 
 // duration returns the duration between two given times.
@@ -157,16 +172,12 @@ func duration(a, b time.Time) time.Duration {
 	return b.Sub(a)
 }
 
-// Duration returns the duration of the replay in seconds.
-func (r *Replay) Duration() (time.Duration, error) {
-	if r.StartTime == 0 {
-		return 0, errors.New("missing start time")
-	}
-	if r.EndTime == 0 {
-		return 0, errors.New("missing end time")
-	}
-	start := time.Unix(int64(r.StartTime), 0)
-	end := time.Unix(int64(r.EndTime), 0)
+// StartTime returns the time at which the match began.
+func (r *Replay) StartTime() time.Time {
+	return time.Unix(int64(r.StartTimeUnix), 0)
+}
 
-	return duration(start, end), nil
+// EndTime returns the time at which the match ended.
+func (r *Replay) EndTime() time.Time {
+	return time.Unix(int64(r.EndTimeUnix), 0)
 }
