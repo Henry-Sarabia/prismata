@@ -1,1 +1,3988 @@
-{"code": "VyrET-IGxyL", "deckInfo": {"mergedDeck": [{"toughness": 1, "baseSet": 1, "name": "Tarsier", "buildTime": 2, "defaultBlocking": 0, "rarity": "normal", "buyCost": "4C", "score": "5C", "beginOwnTurnScript": {"receive": "A"}, "UIName": "Tarsier"}, {"needs": ["Husk"], "toughness": 4, "abilityCost": "C", "name": "Infusion Grid", "defaultBlocking": 1, "assignedBlocking": 0, "buyCost": "5B", "abilityScript": {"create": [["Husk", "own", 4, 0]], "selfsac": true}, "rarity": "normal", "UIName": "Infusion Grid"}, {"toughness": 2, "baseSet": 1, "name": "Rhino", "buildTime": 0, "defaultBlocking": 1, "assignedBlocking": 0, "buyCost": "5C", "charge": 2, "score": "4C", "abilityScript": {"receive": "A"}, "rarity": "normal", "UIName": "Rhino"}, {"needs": ["Drone"], "toughness": 7, "name": "Defense Grid", "defaultBlocking": 1, "lifespan": 7, "rarity": "legendary", "buyCost": "16BBB", "beginOwnTurnScript": {"create": [["Drone", "own"]]}}, {"needs": ["Gauss Charge"], "toughness": 4, "name": "Redeemer", "buyScript": {"create": [["Gauss Charge", "opponent", 6, 3]]}, "defaultBlocking": 1, "assignedBlocking": 0, "buyCost": "10GB", "score": "15CCC", "abilityScript": {"receive": "AAA"}, "rarity": "rare", "UIName": "Redeemer"}, {"toughness": 1, "baseSet": 1, "defaultBlocking": 1, "assignedBlocking": 0, "buyCost": "3H", "abilityScript": {"receive": "1"}, "rarity": "trinket", "name": "Drone"}, {"toughness": 3, "baseSet": 1, "name": "Steelsplitter", "defaultBlocking": 1, "assignedBlocking": 0, "buyCost": "6B", "abilityScript": {"receive": "A"}, "rarity": "normal", "UIName": "Steelsplitter"}, {"rarity": "normal", "toughness": 1, "name": "Nivo Charge", "defaultBlocking": 0, "lifespan": 1, "assignedBlocking": 0, "buyCost": "2G", "score": "0", "targetAction": "disrupt", "abilityScript": {"selfsac": true}, "targetAmount": 5, "UIName": "Nivo Charge"}, {"toughness": 5, "baseSet": 1, "name": "Gauss Cannon", "fragile": 1, "defaultBlocking": 0, "rarity": "normal", "buyCost": "6G", "beginOwnTurnScript": {"receive": "A"}, "UIName": "Gauss Cannon"}, {"toughness": 3, "baseSet": 1, "name": "Conduit", "fragile": 1, "defaultBlocking": 0, "rarity": "normal", "buyCost": "4", "score": "3", "beginOwnTurnScript": {"receive": "G"}}, {"toughness": 3, "baseSet": 1, "name": "Blastforge", "defaultBlocking": 0, "rarity": "normal", "buyCost": "5", "score": "4", "beginOwnTurnScript": {"receive": "B"}, "UIName": "Blastforge"}, {"toughness": 1, "name": "Barrier", "buildTime": 0, "defaultBlocking": 1, "lifespan": 1, "rarity": "trinket", "buyCost": "1G", "score": 0, "UIName": "Barrier"}, {"group": "GB", "toughness": 4, "abilityCost": "GGG", "UIName": "Synthesizer", "name": "Synthesizer", "assignedBlocking": 0, "defaultBlocking": 0, "buyCost": "6B", "abilityScript": {"receive": "BB"}, "rarity": "rare", "beginOwnTurnScript": {"receive": "GG"}}, {"toughness": 3, "baseSet": 1, "buildTime": 0, "defaultBlocking": 1, "rarity": "normal", "buyCost": "5B", "score": "6", "name": "Wall"}, {"toughness": 2, "abilityCost": "C", "name": "Blood Phage", "defaultBlocking": 0, "assignedBlocking": 0, "buyCost": "8CH", "abilityScript": {"receive": "1"}, "rarity": "rare", "beginOwnTurnScript": {"receive": "1A"}}, {"name": "Gauss Charge", "defaultBlocking": 0, "rarity": "trinket", "buyCost": "1G", "beginOwnTurnScript": {"receive": "A", "selfsac": true}, "UIName": "Gauss Charge"}, {"needs": ["Barrier"], "toughness": 4, "fullDescription": ["<FONT COLOR=\"#55e595\">Click: </FONT>gain{AAAA} and construct 2 <FONT COLOR=\"#bbbbff\">Barriers</FONT> with [delay,1,true] for your opponent (they cannot block until next turn)"], "defaultBlocking": 1, "assignedBlocking": 0, "buyCost": "12GGBC", "abilityScript": {"receive": "AAAA", "create": [["Barrier", "opponent", 2, 1]]}, "rarity": "rare", "name": "Valkyrion"}, {"needs": ["Drone"], "toughness": 8, "abilityCost": "GGG", "name": "Thorium Dynamo", "buildTime": 2, "fragile": 1, "assignedBlocking": 0, "defaultBlocking": 0, "buyCost": "5H", "buySac": [["Drone", 3]], "abilityScript": {"receive": "3"}, "rarity": "rare", "UIShortname": "Dynamo", "beginOwnTurnScript": {"receive": "5G"}}, {"toughness": 1, "name": "Husk", "buildTime": 0, "defaultBlocking": 1, "rarity": "trinket", "buyCost": "2C", "score": "2", "UIName": "Husk"}, {"toughness": 5, "name": "Aegis", "buildTime": 0, "fragile": 1, "defaultBlocking": 1, "rarity": "normal", "buyCost": "6GGG", "score": "10", "UIName": "Aegis"}, {"toughness": 2, "baseSet": 1, "name": "Animus", "defaultBlocking": 0, "rarity": "normal", "buyCost": "6", "score": "5", "beginOwnTurnScript": {"receive": "CC"}, "UIName": "Animus"}, {"toughness": 1, "baseSet": 1, "name": "Engineer", "defaultBlocking": 1, "rarity": "trinket", "buyCost": "2", "score": "2.01", "beginOwnTurnScript": {"receive": "H"}}, {"needs": ["Drone"], "toughness": 2, "baseSet": 1, "name": "Forcefield", "buildTime": 0, "fragile": 1, "defaultBlocking": 1, "rarity": "trinket", "buyCost": "1G", "buySac": [["Drone"]], "UIName": "Forcefield"}], "base": [["Engineer", ["Drone", 21], "Conduit", "Blastforge", "Animus", "Forcefield", "Gauss Cannon", "Wall", "Steelsplitter", "Tarsier", "Rhino"], ["Engineer", "Drone", "Conduit", "Blastforge", "Animus", "Forcefield", "Gauss Cannon", "Wall", "Steelsplitter", "Tarsier", "Rhino"]], "draft": [[], []], "deckName": "Standard", "randomizer": [["Synthesizer", "Valkyrion", "Blood Phage", "Defense Grid", "Infusion Grid", "Aegis", "Thorium Dynamo", "Nivo Charge", "Redeemer"], ["Synthesizer", "Valkyrion", "Blood Phage", "Defense Grid", "Infusion Grid", "Aegis", "Thorium Dynamo", "Nivo Charge", "Redeemer"]]}, "endCondition": 0, "initInfo": {"initCards": [[[6, "Drone"], [2, "Engineer"]], [[7, "Drone"], [2, "Engineer"]]], "initResources": ["0", "0"]}, "format": 200, "rawHash": 200851, "playerInfo": [{"displayName": "Yujiri", "name": "Yujiri", "loadingCompleted": true, "bot": "", "trophies": ["Early Access Supporter", "Ambassador", "Planetary Mega Brawl Champion"], "id": 22033, "percentLoaded": 1.0, "avatarFrame": "", "portrait": "__Shadowfang", "cosmetics": {"Centrifuge": "BlueGlow", "Innervi Field": "BlueGlow", "Iso Kronus": "BlueGlow", "Resophore": "BlueGlow", "Rhino": "Regular", "Defense Grid": "Ninja", "Synthesizer": "BlueGlow", "Forcefield": "Repaint", "Trinity Drone": "BlueGlow", "Centurion": "Knights", "Gauss Cannon": "BlueGlow", "Fission Turret": "BlueGlow", "Conduit": "BlueGlow", "Blastforge": "Repaint", "Barrier": "BlueGlow", "Grimbotch": "Pirate", "Wall": "Ninja", "Animus": "Repaint", "Cluster Bolt": "BlueGlow", "Kinetic Driver": "BlueGlow", "Xaetron": "BlueGlow", "Zemora Voidbringer": "BlueGlow", "Immolite": "Knights", "Shredder": "Ninja", "Tarsier": "Pirate", "Asteri Cannon": "BlueGlow", "Redeemer": "BlueGlow", "Drone": "BlueGlow", "Electrovore": "Natural", "Amporilla": "Knights", "Chieftain": "BlueGlow", "Antima Comet": "Infernal", "Polywall": "Ninja", "Plexo Cell": "BlueGlow", "Venge Cannon": "BlueGlow", "Shadowfang": "Infernal", "Gauss Charge": "Contest", "Grenade Mech": "Pirate", "Cynestra": "BlueGlow", "Cryo Ray": "BlueGlow", "Aegis": "BlueGlow", "Gauss Fabricator": "BlueGlow", "Engineer": "Repaint", "Steelsplitter": "Regular"}}, {"displayName": "meoweth", "name": "meoweth", "loadingCompleted": true, "bot": "", "trophies": ["", "", ""], "id": 11961, "percentLoaded": 1.0, "avatarFrame": "", "portrait": "__Electrovore", "cosmetics": {}}], "commandInfo": {"timesRemaining": [30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30], "timeBanksRemaining": [30, 30, 36.39764595031738, 34.80667024850845, 42.38514595031738, 41.79142024850845, 49.62164595031738, 48.96567024850845, 56.67539595031738, 54.02167024850845, 63.10089595031738, 60.31542024850845, 67.75314595031737, 63.938170248508456, 72.92039595031737, 66.26992024850846, 51.90639595031737, 67.78717024850846, 52.54214595031737, 71.17992024850847, 48.73114595031738, 74.50717024850847, 51.56364595031738, 76.28267024850847, 56.51314595031738, 65.46867024850846, 60.80539595031738, 67.90517024850845, 66.70339595031739], "moveDurations": [11.000209093093872, 4.409416198730469, 10.773319005966187, 6.05, 2.061, 1.054, 1.303, 1.785, 9.776, 4.298, 4.825, 11.391, 15.509, 9.331, 20.673, 51.014, 23.931, 27.457, 16.429, 33.811, 16.691, 18.67, 22.898, 10.202, 40.814, 12.831, 20.254, 6.408], "commandList": [{"_type": "emoteGreetings, swarmwielder.", "_id": 0, "_params": {"mBackground": "bg_geometric", "mTextAnimation": "aerial", "mColour": "text_sapphire", "mTint": "tint_gold", "mFrame": "banded"}}, {"_type": "emoteWarning:", "_id": 0, "_params": {}}, {"_type": "emoteI seek revenge!", "_id": 0, "_params": {"mBackground": "bg_logo", "mTextAnimation": "slam", "mColour": "text_amber", "mTint": "tint_red", "mFrame": "deluxe"}}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "card clicked", "_id": 5}, {"_type": "card clicked", "_id": 5}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 8}, {"_type": "card shift clicked", "_id": 5}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "card clicked", "_id": 5}, {"_type": "card clicked", "_id": 17}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 8}, {"_type": "card shift clicked", "_id": 17}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "card shift clicked", "_id": 5}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 8}, {"_type": "card clicked", "_id": 5}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "card shift clicked", "_id": 17}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 8}, {"_type": "card clicked", "_id": 17}, {"_type": "card clicked", "_id": 5}, {"_type": "card clicked", "_id": 20}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "card clicked", "_id": 5}, {"_type": "card clicked", "_id": 5}, {"_type": "inst clicked", "_id": 34}, {"_type": "card clicked", "_id": 5}, {"_type": "inst clicked", "_id": 35}, {"_type": "card clicked", "_id": 10}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 8}, {"_type": "card shift clicked", "_id": 14}, {"_type": "inst clicked", "_id": 23}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card shift clicked", "_id": 0}, {"_type": "card shift clicked", "_id": 5}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "card clicked", "_id": 13}, {"_type": "card clicked", "_id": 10}, {"_type": "card clicked", "_id": 10}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 5}, {"_type": "card clicked", "_id": 5}, {"_type": "inst clicked", "_id": 44}, {"_type": "card clicked", "_id": 17}, {"_type": "inst clicked", "_id": 45}, {"_type": "card clicked", "_id": 5}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 8}, {"_type": "card clicked", "_id": 14}, {"_type": "card clicked", "_id": 14}, {"_type": "inst clicked", "_id": 23}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 10}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 40}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "card clicked", "_id": 3}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 20}, {"_type": "card clicked", "_id": 21}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 8}, {"_type": "card clicked", "_id": 12}, {"_type": "card shift clicked", "_id": 14}, {"_type": "inst clicked", "_id": 54}, {"_type": "card shift clicked", "_id": 0}, {"_type": "card clicked", "_id": 17}, {"_type": "card clicked", "_id": 5}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 23}, {"_type": "inst clicked", "_id": 23}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 21}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 6}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 7}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 40}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "emoteCheck this out...", "_id": 0, "_params": {}}, {"_type": "card clicked", "_id": 16}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "emoteHow terribly rude of you.", "_id": 1, "_params": {"mBackground": "bg_woodpanels", "mTextAnimation": "broFist", "mColour": "text_jade", "mTint": "tint_pink", "mFrame": "deluxe"}}, {"_type": "inst clicked", "_id": 61}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 16}, {"_type": "inst clicked", "_id": 62}, {"_type": "card clicked", "_id": 0}, {"_type": "card clicked", "_id": 0}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 63}, {"_type": "inst clicked", "_id": 64}, {"_type": "card clicked", "_id": 4}, {"_type": "card clicked", "_id": 4}, {"_type": "card clicked", "_id": 0}, {"_type": "inst clicked", "_id": 79}, {"_type": "inst clicked", "_id": 65}, {"_type": "inst clicked", "_id": 72}, {"_type": "card clicked", "_id": 4}, {"_type": "card clicked", "_id": 4}, {"_type": "emoteHow terribly rude of you.", "_id": 1, "_params": {"mBackground": "bg_woodpanels", "mTextAnimation": "broFist", "mColour": "text_jade", "mTint": "tint_pink", "mFrame": "deluxe"}}, {"_type": "inst clicked", "_id": 80}, {"_type": "inst clicked", "_id": 87}, {"_type": "emoteHow terribly rude of you.", "_id": 1, "_params": {"mBackground": "bg_woodpanels", "mTextAnimation": "broFist", "mColour": "text_jade", "mTint": "tint_pink", "mFrame": "deluxe"}}, {"_type": "card clicked", "_id": 16}, {"_type": "card clicked", "_id": 0}, {"_type": "card clicked", "_id": 6}, {"_type": "inst clicked", "_id": 94}, {"_type": "inst clicked", "_id": 95}, {"_type": "inst clicked", "_id": 96}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 16}, {"_type": "card clicked", "_id": 6}, {"_type": "card clicked", "_id": 0}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 58}, {"_type": "card clicked", "_id": 13}, {"_type": "inst clicked", "_id": 53}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 1}, {"_type": "card clicked", "_id": 1}, {"_type": "inst clicked", "_id": 37}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 47}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 37}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 0}, {"_type": "inst clicked", "_id": 23}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card shift clicked", "_id": 5}, {"_type": "card shift clicked", "_id": 21}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 50}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "inst clicked", "_id": 97}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 98}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 16}, {"_type": "inst clicked", "_id": 109}, {"_type": "card clicked", "_id": 4}, {"_type": "card clicked", "_id": 4}, {"_type": "inst clicked", "_id": 110}, {"_type": "inst clicked", "_id": 117}, {"_type": "card clicked", "_id": 14}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 0}, {"_type": "card clicked", "_id": 6}, {"_type": "card clicked", "_id": 6}, {"_type": "inst clicked", "_id": 124}, {"_type": "card clicked", "_id": 0}, {"_type": "card clicked", "_id": 6}, {"_type": "inst clicked", "_id": 125}, {"_type": "inst clicked", "_id": 128}, {"_type": "inst clicked", "_id": 127}, {"_type": "inst clicked", "_id": 126}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 16}, {"_type": "inst clicked", "_id": 130}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 6}, {"_type": "card clicked", "_id": 6}, {"_type": "card clicked", "_id": 0}, {"_type": "card clicked", "_id": 0}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 15}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 16}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 59}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 100}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 104}, {"_type": "inst clicked", "_id": 53}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 3}, {"_type": "card clicked", "_id": 14}, {"_type": "inst clicked", "_id": 47}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 23}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 23}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 23}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card shift clicked", "_id": 21}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 50}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "inst shift clicked", "_id": 131}, {"_type": "inst clicked", "_id": 97}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 1}, {"_type": "card clicked", "_id": 1}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 14}, {"_type": "inst clicked", "_id": 144}, {"_type": "card clicked", "_id": 0}, {"_type": "card clicked", "_id": 0}, {"_type": "card clicked", "_id": 6}, {"_type": "inst clicked", "_id": 142}, {"_type": "card clicked", "_id": 6}, {"_type": "inst clicked", "_id": 147}, {"_type": "card clicked", "_id": 1}, {"_type": "inst clicked", "_id": 143}, {"_type": "card clicked", "_id": 6}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 107}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 108}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 102}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 101}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 58}, {"_type": "card clicked", "_id": 16}, {"_type": "inst clicked", "_id": 53}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 4}, {"_type": "inst clicked", "_id": 47}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 6}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 40}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 50}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "inst shift clicked", "_id": 98}, {"_type": "inst clicked", "_id": 97}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 19}, {"_type": "card clicked", "_id": 14}, {"_type": "card clicked", "_id": 1}, {"_type": "card clicked", "_id": 0}, {"_type": "inst clicked", "_id": 164}, {"_type": "inst clicked", "_id": 166}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 13}, {"_type": "card clicked", "_id": 13}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 22}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 21}, {"_type": "card clicked", "_id": 21}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 141}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 140}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 101}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 105}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 135}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 151}, {"_type": "inst shift clicked", "_id": 152}, {"_type": "inst shift clicked", "_id": 153}, {"_type": "inst shift clicked", "_id": 160}, {"_type": "card clicked", "_id": 13}, {"_type": "inst shift clicked", "_id": 37}, {"_type": "inst clicked", "_id": 53}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 4}, {"_type": "card clicked", "_id": 1}, {"_type": "inst clicked", "_id": 183}, {"_type": "card clicked", "_id": 12}, {"_type": "card clicked", "_id": 10}, {"_type": "card clicked", "_id": 5}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 149}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 169}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 168}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 50}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "inst shift clicked", "_id": 98}, {"_type": "inst clicked", "_id": 97}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 13}, {"_type": "card clicked", "_id": 13}, {"_type": "card clicked", "_id": 13}, {"_type": "inst clicked", "_id": 165}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 7}, {"_type": "card clicked", "_id": 7}, {"_type": "card clicked", "_id": 7}, {"_type": "card clicked", "_id": 0}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 163}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 162}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 100}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 175}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 137}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 138}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 135}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 151}, {"_type": "inst shift clicked", "_id": 152}, {"_type": "inst shift clicked", "_id": 153}, {"_type": "inst shift clicked", "_id": 160}, {"_type": "card shift clicked", "_id": 13}, {"_type": "inst shift clicked", "_id": 53}, {"_type": "card shift clicked", "_id": 13}, {"_type": "inst clicked", "_id": 23}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card shift clicked", "_id": 13}, {"_type": "inst clicked", "_id": 47}, {"_type": "inst clicked", "_id": 48}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 58}, {"_type": "inst clicked", "_id": 104}, {"_type": "inst clicked", "_id": 151}, {"_type": "inst clicked", "_id": 172}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst shift clicked", "_id": 58}, {"_type": "card shift clicked", "_id": 22}, {"_type": "inst shift clicked", "_id": 58}, {"_type": "inst clicked", "_id": 200}, {"_type": "card shift clicked", "_id": 13}, {"_type": "inst clicked", "_id": 160}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 58}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 104}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 21}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 174}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 173}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 190}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 191}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 192}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 52}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 50}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "inst shift clicked", "_id": 132}, {"_type": "inst clicked", "_id": 97}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst shift clicked", "_id": 193}, {"_type": "inst shift clicked", "_id": 135}, {"_type": "inst shift clicked", "_id": 188}, {"_type": "inst clicked", "_id": 195}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 195}, {"_type": "inst clicked", "_id": 201}, {"_type": "inst clicked", "_id": 203}, {"_type": "card clicked", "_id": 13}, {"_type": "card clicked", "_id": 13}, {"_type": "card clicked", "_id": 13}, {"_type": "card clicked", "_id": 7}, {"_type": "card clicked", "_id": 7}, {"_type": "card clicked", "_id": 7}, {"_type": "inst clicked", "_id": 165}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card clicked", "_id": 2}, {"_type": "card clicked", "_id": 21}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 172}, {"_type": "inst shift clicked", "_id": 153}, {"_type": "inst shift clicked", "_id": 152}, {"_type": "card shift clicked", "_id": 13}, {"_type": "inst shift clicked", "_id": 53}, {"_type": "inst clicked", "_id": 53}, {"_type": "end swipe processed", "_id": -1}, {"_type": "card shift clicked", "_id": 2}, {"_type": "card shift clicked", "_id": 22}, {"_type": "card shift clicked", "_id": 21}, {"_type": "space clicked", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst clicked", "_id": 198}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 199}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 214}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 212}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 213}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 171}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst clicked", "_id": 50}, {"_type": "end swipe processed", "_id": -1}, {"_type": "space clicked", "_id": -1}, {"_type": "inst shift clicked", "_id": 0}, {"_type": "inst shift clicked", "_id": 97}, {"_type": "inst shift clicked", "_id": 148}, {"_type": "inst clicked", "_id": 218}, {"_type": "end swipe processed", "_id": -1}, {"_type": "inst shift clicked", "_id": 215}, {"_type": "inst shift clicked", "_id": 135}, {"_type": "inst shift clicked", "_id": 210}, {"_type": "inst clicked", "_id": 227}], "commandTimes": [0, 0, 0, 3.450669050216675, 3.829477071762085, 3.9945240020751953, 4.28535008430481, 4.409416198730469, 11.490078210830688, 13.938725233078003, 14.245862245559692, 15.182735204696655, 15.78299331665039, 16.687946319580078, 16.913320302963257, 21.138673305511475, 21.273972272872925, 22.5847421169281, 23.002693223953248, 23.316670227050782, 23.47785429954529, 23.719127117156983, 23.987252174377442, 24.242696224212647, 24.387331186294556, 25.20019010543823, 25.43622902870178, 25.698069133758544, 25.838715114593505, 26.13443738746643, 26.394387310028076, 27.359237258911133, 27.469829385757446, 28.38422010231018, 29.318651178359985, 30.305786111831665, 30.88737509536743, 37.25328324127197, 37.39533326911926, 38.005963281631466, 38.26454635047912, 38.362090305328366, 39.30095334434509, 39.746304229736324, 40.96583123588562, 41.04196520233154, 41.40592236900329, 41.55073113822937, 42.47014818382263, 43.76997337532043, 44.38984427642822, 44.458797313690184, 45.801345207214354, 46.00407324028015, 46.350088216781614, 46.52619729232788, 47.866513301849366, 48.24865131568909, 50.332092096328736, 50.409416248321534, 50.86747317504883, 50.90139727783203, 52.31752209854126, 52.492628147125245, 53.972035219192506, 54.092662145614625, 56.48295216751099, 56.58250217628479, 57.6179161567688, 57.76256613922119, 58.569859045028686, 62.36635519790649, 64.34199120330811, 65.32148625183106, 65.42513014602662, 71.51212217140198, 72.86195422935486, 73.42212011146546, 73.67633123588561, 73.71258111190795, 73.92718215179443, 74.04683203887939, 74.4284100074768, 76.10155720901489, 76.13756222915649, 77.74818201255798, 77.80648012351989, 82.47259421539306, 82.61122603607177, 83.72188816833496, 88.54237829017639, 90.59834013748169, 93.76843033599853, 94.91250835227966, 98.10746918487548, 98.50826822090148, 100.1014293270111, 101.67371927070617, 101.9036983089447, 101.92028222846984, 102.9083963470459, 103.29128418731689, 103.423292263031, 103.79289031600952, 103.82642126655578, 103.8266823348999, 103.8269333896637, 103.82718635177612, 103.82742930030822, 104.17086935615539, 104.1963443813324, 107.22269535636902, 108.391054397583, 110.39080429649353, 110.42053533172607, 111.70784020996093, 111.73091722106933, 112.07269526100158, 112.10589123344421, 116.16578722572326, 117.29619718170166, 118.58040524101257, 118.99103737449646, 119.54574823951721, 119.57555318450927, 121.75617528533935, 121.87102628326416, 123.16156936264038, 123.3204522190094, 123.90958119010925, 125.00040031051635, 125.29773831939697, 125.42153025245666, 126.1855862197876, 126.29662538146972, 126.43229222869873, 127.26057935333252, 127.36267233467102, 127.64641333198547, 128.22061420059202, 130.49162221527098, 130.54289532279967, 145.5435783920288, 145.81086826896666, 146.03679228401182, 147.6017122325897, 147.63312626457213, 150.5578672943115, 150.61058521842955, 151.45694637870787, 152.3723101673126, 152.4208052215576, 154.20613217926024, 154.30619121170042, 155.54247314453124, 156.38136918067931, 157.85714513778686, 157.90230328559875, 162.40351707458495, 167.14818722724914, 168.61816007614135, 168.65227229118346, 170.19844109535217, 170.25711709976196, 171.38615018844604, 171.4473341178894, 171.66342312812804, 172.6471541595459, 172.71712023735046, 175.10622913360595, 175.9432612133026, 178.2635920715332, 178.39224822044372, 178.79331834411622, 178.82465822792054, 179.09390337562562, 179.24464733695984, 179.7841473350525, 179.8432794342041, 180.2087832221985, 180.243484331131, 181.954426361084, 183.20350034332276, 184.17390019989014, 184.27470524406434, 185.49960429763794, 185.5991342792511, 188.66862733459473, 190.85831434822083, 190.89488823509217, 192.07958228683472, 192.29848940467835, 192.4996732006073, 193.22435028648377, 193.6334872970581, 193.9748392829895, 199.71798236465455, 199.85351331329346, 200.35791833496094, 200.4736173877716, 201.15437824821473, 201.20791323280335, 202.24377639389039, 203.32344634628296, 203.92443425750733, 203.955496383667, 204.15348036384583, 204.26914937591553, 204.57364924049378, 204.68913729286194, 205.59447128868104, 205.69788034057618, 206.73482518959045, 206.73509913253784, 206.73535209465027, 206.7361581878662, 206.73641114997864, 206.7517150001526, 206.7676821308136, 206.7679331855774, 207.03560906219482, 207.14190607833862, 208.82683020401, 208.89177804756164, 209.74869113731384, 210.95481520462036, 211.6969211654663, 211.76095705795288, 212.84182601737976, 212.9037402229309, 216.93674903678894, 216.97062712478638, 217.61973005104065, 217.6456621246338, 221.568680103302, 222.02568107414245, 222.2568040447235, 222.48473230552673, 222.51411429595947, 222.84458414268494, 222.99521723937988, 223.63462630462647, 224.1406473274231, 224.17345014762878, 227.2787202949524, 228.62955323410034, 230.6347331161499, 230.67907015037537, 232.0942901725769, 234.2541863079071, 237.0786801929474, 237.21491209220886, 237.70887509536743, 242.53325930786133, 242.5849742050171, 244.2452363128662, 245.5435351486206, 250.51942030143738, 250.59900323104858, 255.82935515594482, 255.95300427627564, 256.98702626037596, 256.9946110706329, 257.0719652633667, 257.1216772060394, 257.1735971431732, 257.2306862335205, 257.2419801216125, 257.29317312049864, 258.26887421417234, 258.53961925315855, 261.7916770439148, 263.5166271190643, 263.5629911880493, 266.49762825775144, 268.71963624763487, 268.73559217262266, 271.85559205818174, 272.3750360469818, 272.7620652179718, 273.2695363178253, 273.30037528419496, 273.3006373062134, 273.3008883609772, 273.5208771839142, 273.62521129989625, 274.59618836784364, 275.1003983631134, 275.18094831848146, 276.19553619766236, 277.7108553066254, 278.69201117897035, 279.02087432289125, 283.52053433799745, 284.0660331859589, 284.50568038368226, 284.5363262310028, 284.84024435424806, 284.9422743930817, 287.02147227668763, 287.05610829734803, 287.6014252319336, 287.63085824394227, 287.956839384079, 288.0804691925049, 291.189772190094, 291.31097036743165, 292.7342512454987, 292.7345223274231, 292.76018522644046, 292.7831923809052, 292.8151812400818, 292.8481793251038, 292.8752093162537, 292.90529130363467, 292.9304063167572, 292.96038840675357, 293.5302693691254, 293.9317643489838, 294.9611832942963, 295.2851693477631, 295.6564113941193, 296.336595281601, 300.19121120834353, 301.11623118782046, 301.1601362075806, 303.0012852993012, 307.1612782325745, 308.661290391922, 309.3852221813202, 313.7326152172089, 313.74077819252017, 314.1824793663025, 314.348665222168, 314.71334217262273, 314.7414393253327, 314.7416891880036, 314.7419333286286, 314.74217127037053, 314.74240825843816, 314.74264429283147, 314.74287937355047, 315.13573835563665, 315.3011202640534, 316.00548718643194, 316.3970892257691, 316.44058535766607, 317.0372202224732, 317.1854543514252, 318.29841135215764, 319.0410773582459, 319.0413622684479, 319.5861272640229, 319.7010102100373, 319.8060781784058, 320.47086713981633, 324.31190536689763, 324.41702817153936, 325.9454882946015, 325.9535952415467, 325.96149929428105, 325.9863873329163, 326.08255322837834, 326.2324832286835, 326.2615602817536, 326.3065713253022, 326.34663232231145, 326.3964572753907, 326.4387021865845, 326.4765992965699, 326.52164228820806, 326.5666073169709, 326.60656221771245, 326.68652733230596, 327.83666833305364, 328.15671237373357, 328.47155125999456, 331.9174702968598, 332.1965993251801, 332.2855313625336, 333.5875423755646, 333.64959939384465, 334.27763732337957, 335.0209012832642, 335.2977372016907, 335.87752517127996, 340.1726253833771, 340.25182827377324, 340.2520902957917, 340.2915633525849, 340.5514233913422, 341.39059933090215, 341.5825491752625, 341.89153130912786, 348.3215273227692, 351.3324862327576, 352.70770033264165, 352.7465341892243, 354.137678226471, 354.20787938499456, 355.4128943290711, 355.5029843654633, 359.6358242835999, 365.21150740051274, 365.36570938491826, 366.30636019516, 366.34254808235175, 366.3428110580445, 366.3430652122498, 366.3433122138978, 366.3435561161042, 366.34380311775215, 366.34404606628425, 366.34428806114204, 366.3445271949769, 366.34476823616035, 366.3450061779023, 366.3452412586213, 366.3454761009217, 366.81111211586006, 367.0014681320191, 367.44243712234504, 368.0867762069703, 368.12102122116096, 368.78748626518257, 369.5511612396241, 370.3326200942994, 371.2666651706696, 371.31779427337653, 371.52704305458076, 372.5619351367951, 373.2225021820069, 374.0074922542573, 374.14231414604194, 374.55773610878, 375.8274552326203, 375.87623710441596, 375.97740406799323, 376.93116206932075, 377.112339208603, 377.47121805953986, 377.67779416847236, 377.93656415748603, 378.08771414566047, 379.7299932041169, 380.31440720939645, 380.90588031196603, 384.4739752807618, 385.1689582862855, 386.9736841716767, 387.0245731868745, 391.0637253322602, 392.77887926483163, 397.53573332214364, 398.3507553138734, 398.43591628456124, 398.7679542617799, 398.7996090965272, 398.7998770790101, 398.80013123321544, 398.80038228797923, 398.8006390647889, 398.80089107322704, 398.80116906929027, 398.8014172630311, 398.8016602115632, 398.801902206421, 398.80214229393016, 398.8023802356721, 398.80261817741405, 399.43849817085277, 399.5689181404115, 400.1338442878724, 400.5445572452546, 401.01962819862376, 401.0532471256257, 401.8040641860963, 402.5487650947572, 402.9337960796357, 403.87418213653575], "commandForced": [true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false], "clicksPerTurn": [5, 4, 5, 4, 4, 4, 4, 6, 9, 8, 14, 8, 11, 14, 51, 19, 39, 25, 24, 19, 27, 27, 24, 47, 39, 12, 24]}, "timeInfo": {"correspondence": false, "playerCurrentTimeBanks": [30, 30], "playerTime": [{"bankDilution": 0.25, "initial": 30, "bank": 30, "increment": 30}, {"bankDilution": 0.25, "initial": 30, "bank": 30, "increment": 30}], "gracePeriod": 10, "playerCurrentTimes": [30, 30], "turnNumber": -1, "graceCurrentTime": 10, "useClocks": true}, "result": 0, "startTime": 1532955317.245488, "logInfo": {"rawDeck": {"whiteInitCards": [[6, "Drone"], [2, "Engineer"]], "defaultEmbargo": [], "name": "Standard", "whiteInitResources": "0", "smallAmplifyArenaProbability": [], "description": "The base set, plus random units.", "largeAmplifyArenaProbability": [], "baseCards": ["Engineer", "Drone", "Conduit", "Blastforge", "Animus", "Forcefield", "Gauss Cannon", "Wall", "Steelsplitter", "Tarsier", "Rhino"], "blackInitCards": [[7, "Drone"], [2, "Engineer"]], "blackInitResources": "0", "extraCards": ["Repel Field", "Titanic Field", "Short Cannon", "Warden Cannon", "Fast Tarsier", "Slow Tarsier", "Condimus", "Blastuit", "Aniforge", "Robo Santa 2016", "Tiny Wall", "Feeble Wall", "Raid Splitter", "Guard Splitter", "Fire Spinner", "Alloy Swirler", "Ether Twister", "Immaculon", "Enhanced Blastforge", "Enhanced Animus", "Enhanced Conduit", "Great Husk", "Whopping Husk"], "dominionCards": [["Immolite", "Centurion", "Gauss Fabricator", "Militia", "Mahar Rectifier", "Gauss Charge", "Plasmafier", "Cynestra", "Bloodrager", "Doomed Mech", "Electrovore", "Hellhound"], ["Amporilla", "Feral Warden"], ["Doomed Drone", "Grimbotch"], ["Xeno Guardian", "Aegis"], ["Tesla Coil", "Scorchilla"], ["Lancetooth", "Iso Kronus"], ["Shadowfang", "Gaussite Symbiote"], ["Arms Race", "Shredder"], ["Apollo", "Trinity Drone"], ["Doomed Wall", "Chieftain", "Frostbite"], ["Drake", "Perforator"], ["Zemora Voidbringer", "Colossus"], ["Husk", "Pixie"], ["Lucina Spinos", "Cauterizer"], ["Auride Core", "Wild Drone", "Xaetron"], ["Tatsu Nullifier", "Asteri Cannon"], ["Tantalum Ray", "Steelforge"], ["Synthesizer", "Barrier"], ["Odin", "Antima Comet"], ["Hannibull", "Ebb Turbine", "Polywall"], ["Cryo Ray", "Iceblade Golem"], ["Omega Splitter", "Sentinel"], ["Venge Cannon", "Centrifuge"], ["Arka Sodara", "Blood Pact"], ["Shiver Yeti", "Tia Thurnax", "Borehole Patroller"], ["Thermite Core", "Auric Impulse"], ["Vai Mauronax", "Energy Matrix"], ["Nitrocybe", "Deadeye Operative"], ["Chrono Filter", "Ossified Drone"], ["Nivo Charge", "Vivid Drone", "Resophore"], ["Corpus", "Kinetic Driver"], ["Oxide Mixer", "Cluster Bolt"], ["Savior", "Infusion Grid"], ["Grenade Mech", "Manticore"], ["Thorium Dynamo", "Plexo Cell", "Frost Brooder"], ["Blood Phage", "Thunderhead"], ["Protoplasm", "Ferritin Sac"], ["Defense Grid", "Endotherm Kit"], ["Flame Animus", "The Wincer"], ["Redeemer", "Fission Turret", "Galvani Drone"], ["Valkyrion", "Mobile Animus", "Tyranno Smorcus", "Urban Sentry"], ["Bombarder", "Innervi Field", "Photonic Fibroid", "Mega Drone"]]}}, "chatInfo": {}, "versionInfo": {"serverVersion": 623, "playerVersions": ["", ""]}, "seed": 893437323, "ratingInfo": {"scoreChanges": [279, 91], "finalRatings": [{"displayRating": 2135.7280376648214, "winLastLast": false, "dominionELO": 1200, "winLast": false, "peakAdjustedShalevU": 1891.2699552045224, "shalevV": 3920.9814892512986, "shalevU": 1785.7280376648214, "tier": 10, "customGamesPlayed": 695, "tierPercent": 0, "score": {"23": 1381363}, "casualGamesWon": 0, "hStars": 10, "version": 0, "exp": 1645, "ratedGamesPlayed": 7844, "botGamesPlayed": 2785}, {"displayRating": 1873.5144149809978, "winLastLast": false, "dominionELO": 1200, "winLast": false, "peakAdjustedShalevU": 1606.0541084644283, "shalevV": 5406.638446688106, "shalevU": 1523.5144149809978, "tier": 10, "customGamesPlayed": 95, "tierPercent": 0, "score": {"23": 3038857}, "casualGamesWon": 0, "hStars": 96, "version": 0, "exp": 2044499, "ratedGamesPlayed": 13602, "botGamesPlayed": 31}], "ratingChanges": [[3.80095634525901, -18.9581018206286], [-5.280336478413346, -66.7753091504137]], "initialRatings": [{"version": 0, "displayRating": 2131.9270813195626, "winLastLast": false, "dominionELO": 1200, "winLast": false, "peakAdjustedShalevU": 1891.2699552045224, "shalevV": 3939.939591071927, "shalevU": 1781.9270813195624, "tier": 10, "ratedGamesPlayed": 7843, "tierPercent": 0, "casualGamesWon": 0, "hStars": 10, "score": {"23": 1381084}, "exp": 1645, "customGamesPlayed": 695, "botGamesPlayed": 2785}, {"version": 0, "displayRating": 1878.7947514594111, "winLastLast": false, "dominionELO": 1200, "winLast": false, "peakAdjustedShalevU": 1606.0541084644283, "shalevV": 5473.41375583852, "shalevU": 1528.7947514594111, "tier": 10, "ratedGamesPlayed": 13601, "tierPercent": 0, "casualGamesWon": 0, "hStars": 96, "score": {"23": 3038766}, "exp": 2044499, "customGamesPlayed": 95, "botGamesPlayed": 31}]}, "endTime": 1532955756.487255}
+{
+    "code": "VyrET-IGxyL",
+    "deckInfo": {
+        "mergedDeck": [
+            {
+                "toughness": 1,
+                "baseSet": 1,
+                "name": "Tarsier",
+                "buildTime": 2,
+                "defaultBlocking": 0,
+                "rarity": "normal",
+                "buyCost": "4C",
+                "score": "5C",
+                "beginOwnTurnScript": {
+                    "receive": "A"
+                },
+                "UIName": "Tarsier"
+            },
+            {
+                "needs": [
+                    "Husk"
+                ],
+                "toughness": 4,
+                "abilityCost": "C",
+                "name": "Infusion Grid",
+                "defaultBlocking": 1,
+                "assignedBlocking": 0,
+                "buyCost": "5B",
+                "abilityScript": {
+                    "create": [
+                        [
+                            "Husk",
+                            "own",
+                            4,
+                            0
+                        ]
+                    ],
+                    "selfsac": true
+                },
+                "rarity": "normal",
+                "UIName": "Infusion Grid"
+            },
+            {
+                "toughness": 2,
+                "baseSet": 1,
+                "name": "Rhino",
+                "buildTime": 0,
+                "defaultBlocking": 1,
+                "assignedBlocking": 0,
+                "buyCost": "5C",
+                "charge": 2,
+                "score": "4C",
+                "abilityScript": {
+                    "receive": "A"
+                },
+                "rarity": "normal",
+                "UIName": "Rhino"
+            },
+            {
+                "needs": [
+                    "Drone"
+                ],
+                "toughness": 7,
+                "name": "Defense Grid",
+                "defaultBlocking": 1,
+                "lifespan": 7,
+                "rarity": "legendary",
+                "buyCost": "16BBB",
+                "beginOwnTurnScript": {
+                    "create": [
+                        [
+                            "Drone",
+                            "own"
+                        ]
+                    ]
+                }
+            },
+            {
+                "needs": [
+                    "Gauss Charge"
+                ],
+                "toughness": 4,
+                "name": "Redeemer",
+                "buyScript": {
+                    "create": [
+                        [
+                            "Gauss Charge",
+                            "opponent",
+                            6,
+                            3
+                        ]
+                    ]
+                },
+                "defaultBlocking": 1,
+                "assignedBlocking": 0,
+                "buyCost": "10GB",
+                "score": "15CCC",
+                "abilityScript": {
+                    "receive": "AAA"
+                },
+                "rarity": "rare",
+                "UIName": "Redeemer"
+            },
+            {
+                "toughness": 1,
+                "baseSet": 1,
+                "defaultBlocking": 1,
+                "assignedBlocking": 0,
+                "buyCost": "3H",
+                "abilityScript": {
+                    "receive": "1"
+                },
+                "rarity": "trinket",
+                "name": "Drone"
+            },
+            {
+                "toughness": 3,
+                "baseSet": 1,
+                "name": "Steelsplitter",
+                "defaultBlocking": 1,
+                "assignedBlocking": 0,
+                "buyCost": "6B",
+                "abilityScript": {
+                    "receive": "A"
+                },
+                "rarity": "normal",
+                "UIName": "Steelsplitter"
+            },
+            {
+                "rarity": "normal",
+                "toughness": 1,
+                "name": "Nivo Charge",
+                "defaultBlocking": 0,
+                "lifespan": 1,
+                "assignedBlocking": 0,
+                "buyCost": "2G",
+                "score": "0",
+                "targetAction": "disrupt",
+                "abilityScript": {
+                    "selfsac": true
+                },
+                "targetAmount": 5,
+                "UIName": "Nivo Charge"
+            },
+            {
+                "toughness": 5,
+                "baseSet": 1,
+                "name": "Gauss Cannon",
+                "fragile": 1,
+                "defaultBlocking": 0,
+                "rarity": "normal",
+                "buyCost": "6G",
+                "beginOwnTurnScript": {
+                    "receive": "A"
+                },
+                "UIName": "Gauss Cannon"
+            },
+            {
+                "toughness": 3,
+                "baseSet": 1,
+                "name": "Conduit",
+                "fragile": 1,
+                "defaultBlocking": 0,
+                "rarity": "normal",
+                "buyCost": "4",
+                "score": "3",
+                "beginOwnTurnScript": {
+                    "receive": "G"
+                }
+            },
+            {
+                "toughness": 3,
+                "baseSet": 1,
+                "name": "Blastforge",
+                "defaultBlocking": 0,
+                "rarity": "normal",
+                "buyCost": "5",
+                "score": "4",
+                "beginOwnTurnScript": {
+                    "receive": "B"
+                },
+                "UIName": "Blastforge"
+            },
+            {
+                "toughness": 1,
+                "name": "Barrier",
+                "buildTime": 0,
+                "defaultBlocking": 1,
+                "lifespan": 1,
+                "rarity": "trinket",
+                "buyCost": "1G",
+                "score": 0,
+                "UIName": "Barrier"
+            },
+            {
+                "group": "GB",
+                "toughness": 4,
+                "abilityCost": "GGG",
+                "UIName": "Synthesizer",
+                "name": "Synthesizer",
+                "assignedBlocking": 0,
+                "defaultBlocking": 0,
+                "buyCost": "6B",
+                "abilityScript": {
+                    "receive": "BB"
+                },
+                "rarity": "rare",
+                "beginOwnTurnScript": {
+                    "receive": "GG"
+                }
+            },
+            {
+                "toughness": 3,
+                "baseSet": 1,
+                "buildTime": 0,
+                "defaultBlocking": 1,
+                "rarity": "normal",
+                "buyCost": "5B",
+                "score": "6",
+                "name": "Wall"
+            },
+            {
+                "toughness": 2,
+                "abilityCost": "C",
+                "name": "Blood Phage",
+                "defaultBlocking": 0,
+                "assignedBlocking": 0,
+                "buyCost": "8CH",
+                "abilityScript": {
+                    "receive": "1"
+                },
+                "rarity": "rare",
+                "beginOwnTurnScript": {
+                    "receive": "1A"
+                }
+            },
+            {
+                "name": "Gauss Charge",
+                "defaultBlocking": 0,
+                "rarity": "trinket",
+                "buyCost": "1G",
+                "beginOwnTurnScript": {
+                    "receive": "A",
+                    "selfsac": true
+                },
+                "UIName": "Gauss Charge"
+            },
+            {
+                "needs": [
+                    "Barrier"
+                ],
+                "toughness": 4,
+                "fullDescription": [
+                    "<FONT COLOR=\"#55e595\">Click: </FONT>gain{AAAA} and construct 2 <FONT COLOR=\"#bbbbff\">Barriers</FONT> with [delay,1,true] for your opponent (they cannot block until next turn)"
+                ],
+                "defaultBlocking": 1,
+                "assignedBlocking": 0,
+                "buyCost": "12GGBC",
+                "abilityScript": {
+                    "receive": "AAAA",
+                    "create": [
+                        [
+                            "Barrier",
+                            "opponent",
+                            2,
+                            1
+                        ]
+                    ]
+                },
+                "rarity": "rare",
+                "name": "Valkyrion"
+            },
+            {
+                "needs": [
+                    "Drone"
+                ],
+                "toughness": 8,
+                "abilityCost": "GGG",
+                "name": "Thorium Dynamo",
+                "buildTime": 2,
+                "fragile": 1,
+                "assignedBlocking": 0,
+                "defaultBlocking": 0,
+                "buyCost": "5H",
+                "buySac": [
+                    [
+                        "Drone",
+                        3
+                    ]
+                ],
+                "abilityScript": {
+                    "receive": "3"
+                },
+                "rarity": "rare",
+                "UIShortname": "Dynamo",
+                "beginOwnTurnScript": {
+                    "receive": "5G"
+                }
+            },
+            {
+                "toughness": 1,
+                "name": "Husk",
+                "buildTime": 0,
+                "defaultBlocking": 1,
+                "rarity": "trinket",
+                "buyCost": "2C",
+                "score": "2",
+                "UIName": "Husk"
+            },
+            {
+                "toughness": 5,
+                "name": "Aegis",
+                "buildTime": 0,
+                "fragile": 1,
+                "defaultBlocking": 1,
+                "rarity": "normal",
+                "buyCost": "6GGG",
+                "score": "10",
+                "UIName": "Aegis"
+            },
+            {
+                "toughness": 2,
+                "baseSet": 1,
+                "name": "Animus",
+                "defaultBlocking": 0,
+                "rarity": "normal",
+                "buyCost": "6",
+                "score": "5",
+                "beginOwnTurnScript": {
+                    "receive": "CC"
+                },
+                "UIName": "Animus"
+            },
+            {
+                "toughness": 1,
+                "baseSet": 1,
+                "name": "Engineer",
+                "defaultBlocking": 1,
+                "rarity": "trinket",
+                "buyCost": "2",
+                "score": "2.01",
+                "beginOwnTurnScript": {
+                    "receive": "H"
+                }
+            },
+            {
+                "needs": [
+                    "Drone"
+                ],
+                "toughness": 2,
+                "baseSet": 1,
+                "name": "Forcefield",
+                "buildTime": 0,
+                "fragile": 1,
+                "defaultBlocking": 1,
+                "rarity": "trinket",
+                "buyCost": "1G",
+                "buySac": [
+                    [
+                        "Drone"
+                    ]
+                ],
+                "UIName": "Forcefield"
+            }
+        ],
+        "base": [
+            [
+                "Engineer",
+                [
+                    "Drone",
+                    21
+                ],
+                "Conduit",
+                "Blastforge",
+                "Animus",
+                "Forcefield",
+                "Gauss Cannon",
+                "Wall",
+                "Steelsplitter",
+                "Tarsier",
+                "Rhino"
+            ],
+            [
+                "Engineer",
+                "Drone",
+                "Conduit",
+                "Blastforge",
+                "Animus",
+                "Forcefield",
+                "Gauss Cannon",
+                "Wall",
+                "Steelsplitter",
+                "Tarsier",
+                "Rhino"
+            ]
+        ],
+        "draft": [
+            [],
+            []
+        ],
+        "deckName": "Standard",
+        "randomizer": [
+            [
+                "Synthesizer",
+                "Valkyrion",
+                "Blood Phage",
+                "Defense Grid",
+                "Infusion Grid",
+                "Aegis",
+                "Thorium Dynamo",
+                "Nivo Charge",
+                "Redeemer"
+            ],
+            [
+                "Synthesizer",
+                "Valkyrion",
+                "Blood Phage",
+                "Defense Grid",
+                "Infusion Grid",
+                "Aegis",
+                "Thorium Dynamo",
+                "Nivo Charge",
+                "Redeemer"
+            ]
+        ]
+    },
+    "endCondition": 0,
+    "initInfo": {
+        "initCards": [
+            [
+                [
+                    6,
+                    "Drone"
+                ],
+                [
+                    2,
+                    "Engineer"
+                ]
+            ],
+            [
+                [
+                    7,
+                    "Drone"
+                ],
+                [
+                    2,
+                    "Engineer"
+                ]
+            ]
+        ],
+        "initResources": [
+            "0",
+            "0"
+        ]
+    },
+    "format": 200,
+    "rawHash": 200851,
+    "playerInfo": [
+        {
+            "displayName": "Yujiri",
+            "name": "Yujiri",
+            "loadingCompleted": true,
+            "bot": "",
+            "trophies": [
+                "Early Access Supporter",
+                "Ambassador",
+                "Planetary Mega Brawl Champion"
+            ],
+            "id": 22033,
+            "percentLoaded": 1.0,
+            "avatarFrame": "",
+            "portrait": "__Shadowfang",
+            "cosmetics": {
+                "Centrifuge": "BlueGlow",
+                "Innervi Field": "BlueGlow",
+                "Iso Kronus": "BlueGlow",
+                "Resophore": "BlueGlow",
+                "Rhino": "Regular",
+                "Defense Grid": "Ninja",
+                "Synthesizer": "BlueGlow",
+                "Forcefield": "Repaint",
+                "Trinity Drone": "BlueGlow",
+                "Centurion": "Knights",
+                "Gauss Cannon": "BlueGlow",
+                "Fission Turret": "BlueGlow",
+                "Conduit": "BlueGlow",
+                "Blastforge": "Repaint",
+                "Barrier": "BlueGlow",
+                "Grimbotch": "Pirate",
+                "Wall": "Ninja",
+                "Animus": "Repaint",
+                "Cluster Bolt": "BlueGlow",
+                "Kinetic Driver": "BlueGlow",
+                "Xaetron": "BlueGlow",
+                "Zemora Voidbringer": "BlueGlow",
+                "Immolite": "Knights",
+                "Shredder": "Ninja",
+                "Tarsier": "Pirate",
+                "Asteri Cannon": "BlueGlow",
+                "Redeemer": "BlueGlow",
+                "Drone": "BlueGlow",
+                "Electrovore": "Natural",
+                "Amporilla": "Knights",
+                "Chieftain": "BlueGlow",
+                "Antima Comet": "Infernal",
+                "Polywall": "Ninja",
+                "Plexo Cell": "BlueGlow",
+                "Venge Cannon": "BlueGlow",
+                "Shadowfang": "Infernal",
+                "Gauss Charge": "Contest",
+                "Grenade Mech": "Pirate",
+                "Cynestra": "BlueGlow",
+                "Cryo Ray": "BlueGlow",
+                "Aegis": "BlueGlow",
+                "Gauss Fabricator": "BlueGlow",
+                "Engineer": "Repaint",
+                "Steelsplitter": "Regular"
+            }
+        },
+        {
+            "displayName": "meoweth",
+            "name": "meoweth",
+            "loadingCompleted": true,
+            "bot": "",
+            "trophies": [
+                "",
+                "",
+                ""
+            ],
+            "id": 11961,
+            "percentLoaded": 1.0,
+            "avatarFrame": "",
+            "portrait": "__Electrovore",
+            "cosmetics": {}
+        }
+    ],
+    "commandInfo": {
+        "timesRemaining": [
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30
+        ],
+        "timeBanksRemaining": [
+            30,
+            30,
+            36.39764595031738,
+            34.80667024850845,
+            42.38514595031738,
+            41.79142024850845,
+            49.62164595031738,
+            48.96567024850845,
+            56.67539595031738,
+            54.02167024850845,
+            63.10089595031738,
+            60.31542024850845,
+            67.75314595031737,
+            63.938170248508456,
+            72.92039595031737,
+            66.26992024850846,
+            51.90639595031737,
+            67.78717024850846,
+            52.54214595031737,
+            71.17992024850847,
+            48.73114595031738,
+            74.50717024850847,
+            51.56364595031738,
+            76.28267024850847,
+            56.51314595031738,
+            65.46867024850846,
+            60.80539595031738,
+            67.90517024850845,
+            66.70339595031739
+        ],
+        "moveDurations": [
+            11.000209093093872,
+            4.409416198730469,
+            10.773319005966187,
+            6.05,
+            2.061,
+            1.054,
+            1.303,
+            1.785,
+            9.776,
+            4.298,
+            4.825,
+            11.391,
+            15.509,
+            9.331,
+            20.673,
+            51.014,
+            23.931,
+            27.457,
+            16.429,
+            33.811,
+            16.691,
+            18.67,
+            22.898,
+            10.202,
+            40.814,
+            12.831,
+            20.254,
+            6.408
+        ],
+        "commandList": [
+            {
+                "_type": "emoteGreetings, swarmwielder.",
+                "_id": 0,
+                "_params": {
+                    "mBackground": "bg_geometric",
+                    "mTextAnimation": "aerial",
+                    "mColour": "text_sapphire",
+                    "mTint": "tint_gold",
+                    "mFrame": "banded"
+                }
+            },
+            {
+                "_type": "emoteWarning:",
+                "_id": 0,
+                "_params": {}
+            },
+            {
+                "_type": "emoteI seek revenge!",
+                "_id": 0,
+                "_params": {
+                    "mBackground": "bg_logo",
+                    "mTextAnimation": "slam",
+                    "mColour": "text_amber",
+                    "mTint": "tint_red",
+                    "mFrame": "deluxe"
+                }
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 8
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 5
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "card clicked",
+                "_id": 17
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 8
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 17
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 5
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 8
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 17
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 8
+            },
+            {
+                "_type": "card clicked",
+                "_id": 17
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "card clicked",
+                "_id": 20
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 34
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 35
+            },
+            {
+                "_type": "card clicked",
+                "_id": 10
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 8
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 14
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 23
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 5
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "card clicked",
+                "_id": 10
+            },
+            {
+                "_type": "card clicked",
+                "_id": 10
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 44
+            },
+            {
+                "_type": "card clicked",
+                "_id": 17
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 45
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 8
+            },
+            {
+                "_type": "card clicked",
+                "_id": 14
+            },
+            {
+                "_type": "card clicked",
+                "_id": 14
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 23
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 10
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 40
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 3
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 20
+            },
+            {
+                "_type": "card clicked",
+                "_id": 21
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 8
+            },
+            {
+                "_type": "card clicked",
+                "_id": 12
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 14
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 54
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 17
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 23
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 23
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 21
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 6
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 7
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 40
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "emoteCheck this out...",
+                "_id": 0,
+                "_params": {}
+            },
+            {
+                "_type": "card clicked",
+                "_id": 16
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "emoteHow terribly rude of you.",
+                "_id": 1,
+                "_params": {
+                    "mBackground": "bg_woodpanels",
+                    "mTextAnimation": "broFist",
+                    "mColour": "text_jade",
+                    "mTint": "tint_pink",
+                    "mFrame": "deluxe"
+                }
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 61
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 16
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 62
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 63
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 64
+            },
+            {
+                "_type": "card clicked",
+                "_id": 4
+            },
+            {
+                "_type": "card clicked",
+                "_id": 4
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 79
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 65
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 72
+            },
+            {
+                "_type": "card clicked",
+                "_id": 4
+            },
+            {
+                "_type": "card clicked",
+                "_id": 4
+            },
+            {
+                "_type": "emoteHow terribly rude of you.",
+                "_id": 1,
+                "_params": {
+                    "mBackground": "bg_woodpanels",
+                    "mTextAnimation": "broFist",
+                    "mColour": "text_jade",
+                    "mTint": "tint_pink",
+                    "mFrame": "deluxe"
+                }
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 80
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 87
+            },
+            {
+                "_type": "emoteHow terribly rude of you.",
+                "_id": 1,
+                "_params": {
+                    "mBackground": "bg_woodpanels",
+                    "mTextAnimation": "broFist",
+                    "mColour": "text_jade",
+                    "mTint": "tint_pink",
+                    "mFrame": "deluxe"
+                }
+            },
+            {
+                "_type": "card clicked",
+                "_id": 16
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 94
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 95
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 96
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 16
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 58
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 53
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 37
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 47
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 37
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 23
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 5
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 21
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 50
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 97
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 98
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 16
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 109
+            },
+            {
+                "_type": "card clicked",
+                "_id": 4
+            },
+            {
+                "_type": "card clicked",
+                "_id": 4
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 110
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 117
+            },
+            {
+                "_type": "card clicked",
+                "_id": 14
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 124
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 125
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 128
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 127
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 126
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 16
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 130
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 15
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 16
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 59
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 100
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 104
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 53
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 3
+            },
+            {
+                "_type": "card clicked",
+                "_id": 14
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 47
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 23
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 23
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 23
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 21
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 50
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 131
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 97
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 14
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 144
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 142
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 147
+            },
+            {
+                "_type": "card clicked",
+                "_id": 1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 143
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 107
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 108
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 102
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 101
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 58
+            },
+            {
+                "_type": "card clicked",
+                "_id": 16
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 53
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 4
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 47
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 6
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 40
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 50
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 98
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 97
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 19
+            },
+            {
+                "_type": "card clicked",
+                "_id": 14
+            },
+            {
+                "_type": "card clicked",
+                "_id": 1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 164
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 166
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 22
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 21
+            },
+            {
+                "_type": "card clicked",
+                "_id": 21
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 141
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 140
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 101
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 105
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 135
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 151
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 152
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 153
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 160
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 37
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 53
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 4
+            },
+            {
+                "_type": "card clicked",
+                "_id": 1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 183
+            },
+            {
+                "_type": "card clicked",
+                "_id": 12
+            },
+            {
+                "_type": "card clicked",
+                "_id": 10
+            },
+            {
+                "_type": "card clicked",
+                "_id": 5
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 149
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 169
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 168
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 50
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 98
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 97
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 165
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 7
+            },
+            {
+                "_type": "card clicked",
+                "_id": 7
+            },
+            {
+                "_type": "card clicked",
+                "_id": 7
+            },
+            {
+                "_type": "card clicked",
+                "_id": 0
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 163
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 162
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 100
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 175
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 137
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 138
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 135
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 151
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 152
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 153
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 160
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 13
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 53
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 13
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 23
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 13
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 47
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 48
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 58
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 104
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 151
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 172
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 58
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 22
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 58
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 200
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 13
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 160
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 58
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 104
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 21
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 174
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 173
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 190
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 191
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 192
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 52
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 50
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 132
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 97
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 193
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 135
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 188
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 195
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 195
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 201
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 203
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "card clicked",
+                "_id": 13
+            },
+            {
+                "_type": "card clicked",
+                "_id": 7
+            },
+            {
+                "_type": "card clicked",
+                "_id": 7
+            },
+            {
+                "_type": "card clicked",
+                "_id": 7
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 165
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card clicked",
+                "_id": 2
+            },
+            {
+                "_type": "card clicked",
+                "_id": 21
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 172
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 153
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 152
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 13
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 53
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 53
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 2
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 22
+            },
+            {
+                "_type": "card shift clicked",
+                "_id": 21
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 198
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 199
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 214
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 212
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 213
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 171
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 50
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "space clicked",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 0
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 97
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 148
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 218
+            },
+            {
+                "_type": "end swipe processed",
+                "_id": -1
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 215
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 135
+            },
+            {
+                "_type": "inst shift clicked",
+                "_id": 210
+            },
+            {
+                "_type": "inst clicked",
+                "_id": 227
+            }
+        ],
+        "commandTimes": [
+            0,
+            0,
+            0,
+            3.450669050216675,
+            3.829477071762085,
+            3.9945240020751953,
+            4.28535008430481,
+            4.409416198730469,
+            11.490078210830688,
+            13.938725233078003,
+            14.245862245559692,
+            15.182735204696655,
+            15.78299331665039,
+            16.687946319580078,
+            16.913320302963257,
+            21.138673305511475,
+            21.273972272872925,
+            22.5847421169281,
+            23.002693223953248,
+            23.316670227050782,
+            23.47785429954529,
+            23.719127117156983,
+            23.987252174377442,
+            24.242696224212647,
+            24.387331186294556,
+            25.20019010543823,
+            25.43622902870178,
+            25.698069133758544,
+            25.838715114593505,
+            26.13443738746643,
+            26.394387310028076,
+            27.359237258911133,
+            27.469829385757446,
+            28.38422010231018,
+            29.318651178359985,
+            30.305786111831665,
+            30.88737509536743,
+            37.25328324127197,
+            37.39533326911926,
+            38.005963281631466,
+            38.26454635047912,
+            38.362090305328366,
+            39.30095334434509,
+            39.746304229736324,
+            40.96583123588562,
+            41.04196520233154,
+            41.40592236900329,
+            41.55073113822937,
+            42.47014818382263,
+            43.76997337532043,
+            44.38984427642822,
+            44.458797313690184,
+            45.801345207214354,
+            46.00407324028015,
+            46.350088216781614,
+            46.52619729232788,
+            47.866513301849366,
+            48.24865131568909,
+            50.332092096328736,
+            50.409416248321534,
+            50.86747317504883,
+            50.90139727783203,
+            52.31752209854126,
+            52.492628147125245,
+            53.972035219192506,
+            54.092662145614625,
+            56.48295216751099,
+            56.58250217628479,
+            57.6179161567688,
+            57.76256613922119,
+            58.569859045028686,
+            62.36635519790649,
+            64.34199120330811,
+            65.32148625183106,
+            65.42513014602662,
+            71.51212217140198,
+            72.86195422935486,
+            73.42212011146546,
+            73.67633123588561,
+            73.71258111190795,
+            73.92718215179443,
+            74.04683203887939,
+            74.4284100074768,
+            76.10155720901489,
+            76.13756222915649,
+            77.74818201255798,
+            77.80648012351989,
+            82.47259421539306,
+            82.61122603607177,
+            83.72188816833496,
+            88.54237829017639,
+            90.59834013748169,
+            93.76843033599853,
+            94.91250835227966,
+            98.10746918487548,
+            98.50826822090148,
+            100.1014293270111,
+            101.67371927070617,
+            101.9036983089447,
+            101.92028222846984,
+            102.9083963470459,
+            103.29128418731689,
+            103.423292263031,
+            103.79289031600952,
+            103.82642126655578,
+            103.8266823348999,
+            103.8269333896637,
+            103.82718635177612,
+            103.82742930030822,
+            104.17086935615539,
+            104.1963443813324,
+            107.22269535636902,
+            108.391054397583,
+            110.39080429649353,
+            110.42053533172607,
+            111.70784020996093,
+            111.73091722106933,
+            112.07269526100158,
+            112.10589123344421,
+            116.16578722572326,
+            117.29619718170166,
+            118.58040524101257,
+            118.99103737449646,
+            119.54574823951721,
+            119.57555318450927,
+            121.75617528533935,
+            121.87102628326416,
+            123.16156936264038,
+            123.3204522190094,
+            123.90958119010925,
+            125.00040031051635,
+            125.29773831939697,
+            125.42153025245666,
+            126.1855862197876,
+            126.29662538146972,
+            126.43229222869873,
+            127.26057935333252,
+            127.36267233467102,
+            127.64641333198547,
+            128.22061420059202,
+            130.49162221527098,
+            130.54289532279967,
+            145.5435783920288,
+            145.81086826896666,
+            146.03679228401182,
+            147.6017122325897,
+            147.63312626457213,
+            150.5578672943115,
+            150.61058521842955,
+            151.45694637870787,
+            152.3723101673126,
+            152.4208052215576,
+            154.20613217926024,
+            154.30619121170042,
+            155.54247314453124,
+            156.38136918067931,
+            157.85714513778686,
+            157.90230328559875,
+            162.40351707458495,
+            167.14818722724914,
+            168.61816007614135,
+            168.65227229118346,
+            170.19844109535217,
+            170.25711709976196,
+            171.38615018844604,
+            171.4473341178894,
+            171.66342312812804,
+            172.6471541595459,
+            172.71712023735046,
+            175.10622913360595,
+            175.9432612133026,
+            178.2635920715332,
+            178.39224822044372,
+            178.79331834411622,
+            178.82465822792054,
+            179.09390337562562,
+            179.24464733695984,
+            179.7841473350525,
+            179.8432794342041,
+            180.2087832221985,
+            180.243484331131,
+            181.954426361084,
+            183.20350034332276,
+            184.17390019989014,
+            184.27470524406434,
+            185.49960429763794,
+            185.5991342792511,
+            188.66862733459473,
+            190.85831434822083,
+            190.89488823509217,
+            192.07958228683472,
+            192.29848940467835,
+            192.4996732006073,
+            193.22435028648377,
+            193.6334872970581,
+            193.9748392829895,
+            199.71798236465455,
+            199.85351331329346,
+            200.35791833496094,
+            200.4736173877716,
+            201.15437824821473,
+            201.20791323280335,
+            202.24377639389039,
+            203.32344634628296,
+            203.92443425750733,
+            203.955496383667,
+            204.15348036384583,
+            204.26914937591553,
+            204.57364924049378,
+            204.68913729286194,
+            205.59447128868104,
+            205.69788034057618,
+            206.73482518959045,
+            206.73509913253784,
+            206.73535209465027,
+            206.7361581878662,
+            206.73641114997864,
+            206.7517150001526,
+            206.7676821308136,
+            206.7679331855774,
+            207.03560906219482,
+            207.14190607833862,
+            208.82683020401,
+            208.89177804756164,
+            209.74869113731384,
+            210.95481520462036,
+            211.6969211654663,
+            211.76095705795288,
+            212.84182601737976,
+            212.9037402229309,
+            216.93674903678894,
+            216.97062712478638,
+            217.61973005104065,
+            217.6456621246338,
+            221.568680103302,
+            222.02568107414245,
+            222.2568040447235,
+            222.48473230552673,
+            222.51411429595947,
+            222.84458414268494,
+            222.99521723937988,
+            223.63462630462647,
+            224.1406473274231,
+            224.17345014762878,
+            227.2787202949524,
+            228.62955323410034,
+            230.6347331161499,
+            230.67907015037537,
+            232.0942901725769,
+            234.2541863079071,
+            237.0786801929474,
+            237.21491209220886,
+            237.70887509536743,
+            242.53325930786133,
+            242.5849742050171,
+            244.2452363128662,
+            245.5435351486206,
+            250.51942030143738,
+            250.59900323104858,
+            255.82935515594482,
+            255.95300427627564,
+            256.98702626037596,
+            256.9946110706329,
+            257.0719652633667,
+            257.1216772060394,
+            257.1735971431732,
+            257.2306862335205,
+            257.2419801216125,
+            257.29317312049864,
+            258.26887421417234,
+            258.53961925315855,
+            261.7916770439148,
+            263.5166271190643,
+            263.5629911880493,
+            266.49762825775144,
+            268.71963624763487,
+            268.73559217262266,
+            271.85559205818174,
+            272.3750360469818,
+            272.7620652179718,
+            273.2695363178253,
+            273.30037528419496,
+            273.3006373062134,
+            273.3008883609772,
+            273.5208771839142,
+            273.62521129989625,
+            274.59618836784364,
+            275.1003983631134,
+            275.18094831848146,
+            276.19553619766236,
+            277.7108553066254,
+            278.69201117897035,
+            279.02087432289125,
+            283.52053433799745,
+            284.0660331859589,
+            284.50568038368226,
+            284.5363262310028,
+            284.84024435424806,
+            284.9422743930817,
+            287.02147227668763,
+            287.05610829734803,
+            287.6014252319336,
+            287.63085824394227,
+            287.956839384079,
+            288.0804691925049,
+            291.189772190094,
+            291.31097036743165,
+            292.7342512454987,
+            292.7345223274231,
+            292.76018522644046,
+            292.7831923809052,
+            292.8151812400818,
+            292.8481793251038,
+            292.8752093162537,
+            292.90529130363467,
+            292.9304063167572,
+            292.96038840675357,
+            293.5302693691254,
+            293.9317643489838,
+            294.9611832942963,
+            295.2851693477631,
+            295.6564113941193,
+            296.336595281601,
+            300.19121120834353,
+            301.11623118782046,
+            301.1601362075806,
+            303.0012852993012,
+            307.1612782325745,
+            308.661290391922,
+            309.3852221813202,
+            313.7326152172089,
+            313.74077819252017,
+            314.1824793663025,
+            314.348665222168,
+            314.71334217262273,
+            314.7414393253327,
+            314.7416891880036,
+            314.7419333286286,
+            314.74217127037053,
+            314.74240825843816,
+            314.74264429283147,
+            314.74287937355047,
+            315.13573835563665,
+            315.3011202640534,
+            316.00548718643194,
+            316.3970892257691,
+            316.44058535766607,
+            317.0372202224732,
+            317.1854543514252,
+            318.29841135215764,
+            319.0410773582459,
+            319.0413622684479,
+            319.5861272640229,
+            319.7010102100373,
+            319.8060781784058,
+            320.47086713981633,
+            324.31190536689763,
+            324.41702817153936,
+            325.9454882946015,
+            325.9535952415467,
+            325.96149929428105,
+            325.9863873329163,
+            326.08255322837834,
+            326.2324832286835,
+            326.2615602817536,
+            326.3065713253022,
+            326.34663232231145,
+            326.3964572753907,
+            326.4387021865845,
+            326.4765992965699,
+            326.52164228820806,
+            326.5666073169709,
+            326.60656221771245,
+            326.68652733230596,
+            327.83666833305364,
+            328.15671237373357,
+            328.47155125999456,
+            331.9174702968598,
+            332.1965993251801,
+            332.2855313625336,
+            333.5875423755646,
+            333.64959939384465,
+            334.27763732337957,
+            335.0209012832642,
+            335.2977372016907,
+            335.87752517127996,
+            340.1726253833771,
+            340.25182827377324,
+            340.2520902957917,
+            340.2915633525849,
+            340.5514233913422,
+            341.39059933090215,
+            341.5825491752625,
+            341.89153130912786,
+            348.3215273227692,
+            351.3324862327576,
+            352.70770033264165,
+            352.7465341892243,
+            354.137678226471,
+            354.20787938499456,
+            355.4128943290711,
+            355.5029843654633,
+            359.6358242835999,
+            365.21150740051274,
+            365.36570938491826,
+            366.30636019516,
+            366.34254808235175,
+            366.3428110580445,
+            366.3430652122498,
+            366.3433122138978,
+            366.3435561161042,
+            366.34380311775215,
+            366.34404606628425,
+            366.34428806114204,
+            366.3445271949769,
+            366.34476823616035,
+            366.3450061779023,
+            366.3452412586213,
+            366.3454761009217,
+            366.81111211586006,
+            367.0014681320191,
+            367.44243712234504,
+            368.0867762069703,
+            368.12102122116096,
+            368.78748626518257,
+            369.5511612396241,
+            370.3326200942994,
+            371.2666651706696,
+            371.31779427337653,
+            371.52704305458076,
+            372.5619351367951,
+            373.2225021820069,
+            374.0074922542573,
+            374.14231414604194,
+            374.55773610878,
+            375.8274552326203,
+            375.87623710441596,
+            375.97740406799323,
+            376.93116206932075,
+            377.112339208603,
+            377.47121805953986,
+            377.67779416847236,
+            377.93656415748603,
+            378.08771414566047,
+            379.7299932041169,
+            380.31440720939645,
+            380.90588031196603,
+            384.4739752807618,
+            385.1689582862855,
+            386.9736841716767,
+            387.0245731868745,
+            391.0637253322602,
+            392.77887926483163,
+            397.53573332214364,
+            398.3507553138734,
+            398.43591628456124,
+            398.7679542617799,
+            398.7996090965272,
+            398.7998770790101,
+            398.80013123321544,
+            398.80038228797923,
+            398.8006390647889,
+            398.80089107322704,
+            398.80116906929027,
+            398.8014172630311,
+            398.8016602115632,
+            398.801902206421,
+            398.80214229393016,
+            398.8023802356721,
+            398.80261817741405,
+            399.43849817085277,
+            399.5689181404115,
+            400.1338442878724,
+            400.5445572452546,
+            401.01962819862376,
+            401.0532471256257,
+            401.8040641860963,
+            402.5487650947572,
+            402.9337960796357,
+            403.87418213653575
+        ],
+        "commandForced": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "clicksPerTurn": [
+            5,
+            4,
+            5,
+            4,
+            4,
+            4,
+            4,
+            6,
+            9,
+            8,
+            14,
+            8,
+            11,
+            14,
+            51,
+            19,
+            39,
+            25,
+            24,
+            19,
+            27,
+            27,
+            24,
+            47,
+            39,
+            12,
+            24
+        ]
+    },
+    "timeInfo": {
+        "correspondence": false,
+        "playerCurrentTimeBanks": [
+            30,
+            30
+        ],
+        "playerTime": [
+            {
+                "bankDilution": 0.25,
+                "initial": 30,
+                "bank": 30,
+                "increment": 30
+            },
+            {
+                "bankDilution": 0.25,
+                "initial": 30,
+                "bank": 30,
+                "increment": 30
+            }
+        ],
+        "gracePeriod": 10,
+        "playerCurrentTimes": [
+            30,
+            30
+        ],
+        "turnNumber": -1,
+        "graceCurrentTime": 10,
+        "useClocks": true
+    },
+    "result": 0,
+    "startTime": 1532955317.245488,
+    "logInfo": {
+        "rawDeck": {
+            "whiteInitCards": [
+                [
+                    6,
+                    "Drone"
+                ],
+                [
+                    2,
+                    "Engineer"
+                ]
+            ],
+            "defaultEmbargo": [],
+            "name": "Standard",
+            "whiteInitResources": "0",
+            "smallAmplifyArenaProbability": [],
+            "description": "The base set, plus random units.",
+            "largeAmplifyArenaProbability": [],
+            "baseCards": [
+                "Engineer",
+                "Drone",
+                "Conduit",
+                "Blastforge",
+                "Animus",
+                "Forcefield",
+                "Gauss Cannon",
+                "Wall",
+                "Steelsplitter",
+                "Tarsier",
+                "Rhino"
+            ],
+            "blackInitCards": [
+                [
+                    7,
+                    "Drone"
+                ],
+                [
+                    2,
+                    "Engineer"
+                ]
+            ],
+            "blackInitResources": "0",
+            "extraCards": [
+                "Repel Field",
+                "Titanic Field",
+                "Short Cannon",
+                "Warden Cannon",
+                "Fast Tarsier",
+                "Slow Tarsier",
+                "Condimus",
+                "Blastuit",
+                "Aniforge",
+                "Robo Santa 2016",
+                "Tiny Wall",
+                "Feeble Wall",
+                "Raid Splitter",
+                "Guard Splitter",
+                "Fire Spinner",
+                "Alloy Swirler",
+                "Ether Twister",
+                "Immaculon",
+                "Enhanced Blastforge",
+                "Enhanced Animus",
+                "Enhanced Conduit",
+                "Great Husk",
+                "Whopping Husk"
+            ],
+            "dominionCards": [
+                [
+                    "Immolite",
+                    "Centurion",
+                    "Gauss Fabricator",
+                    "Militia",
+                    "Mahar Rectifier",
+                    "Gauss Charge",
+                    "Plasmafier",
+                    "Cynestra",
+                    "Bloodrager",
+                    "Doomed Mech",
+                    "Electrovore",
+                    "Hellhound"
+                ],
+                [
+                    "Amporilla",
+                    "Feral Warden"
+                ],
+                [
+                    "Doomed Drone",
+                    "Grimbotch"
+                ],
+                [
+                    "Xeno Guardian",
+                    "Aegis"
+                ],
+                [
+                    "Tesla Coil",
+                    "Scorchilla"
+                ],
+                [
+                    "Lancetooth",
+                    "Iso Kronus"
+                ],
+                [
+                    "Shadowfang",
+                    "Gaussite Symbiote"
+                ],
+                [
+                    "Arms Race",
+                    "Shredder"
+                ],
+                [
+                    "Apollo",
+                    "Trinity Drone"
+                ],
+                [
+                    "Doomed Wall",
+                    "Chieftain",
+                    "Frostbite"
+                ],
+                [
+                    "Drake",
+                    "Perforator"
+                ],
+                [
+                    "Zemora Voidbringer",
+                    "Colossus"
+                ],
+                [
+                    "Husk",
+                    "Pixie"
+                ],
+                [
+                    "Lucina Spinos",
+                    "Cauterizer"
+                ],
+                [
+                    "Auride Core",
+                    "Wild Drone",
+                    "Xaetron"
+                ],
+                [
+                    "Tatsu Nullifier",
+                    "Asteri Cannon"
+                ],
+                [
+                    "Tantalum Ray",
+                    "Steelforge"
+                ],
+                [
+                    "Synthesizer",
+                    "Barrier"
+                ],
+                [
+                    "Odin",
+                    "Antima Comet"
+                ],
+                [
+                    "Hannibull",
+                    "Ebb Turbine",
+                    "Polywall"
+                ],
+                [
+                    "Cryo Ray",
+                    "Iceblade Golem"
+                ],
+                [
+                    "Omega Splitter",
+                    "Sentinel"
+                ],
+                [
+                    "Venge Cannon",
+                    "Centrifuge"
+                ],
+                [
+                    "Arka Sodara",
+                    "Blood Pact"
+                ],
+                [
+                    "Shiver Yeti",
+                    "Tia Thurnax",
+                    "Borehole Patroller"
+                ],
+                [
+                    "Thermite Core",
+                    "Auric Impulse"
+                ],
+                [
+                    "Vai Mauronax",
+                    "Energy Matrix"
+                ],
+                [
+                    "Nitrocybe",
+                    "Deadeye Operative"
+                ],
+                [
+                    "Chrono Filter",
+                    "Ossified Drone"
+                ],
+                [
+                    "Nivo Charge",
+                    "Vivid Drone",
+                    "Resophore"
+                ],
+                [
+                    "Corpus",
+                    "Kinetic Driver"
+                ],
+                [
+                    "Oxide Mixer",
+                    "Cluster Bolt"
+                ],
+                [
+                    "Savior",
+                    "Infusion Grid"
+                ],
+                [
+                    "Grenade Mech",
+                    "Manticore"
+                ],
+                [
+                    "Thorium Dynamo",
+                    "Plexo Cell",
+                    "Frost Brooder"
+                ],
+                [
+                    "Blood Phage",
+                    "Thunderhead"
+                ],
+                [
+                    "Protoplasm",
+                    "Ferritin Sac"
+                ],
+                [
+                    "Defense Grid",
+                    "Endotherm Kit"
+                ],
+                [
+                    "Flame Animus",
+                    "The Wincer"
+                ],
+                [
+                    "Redeemer",
+                    "Fission Turret",
+                    "Galvani Drone"
+                ],
+                [
+                    "Valkyrion",
+                    "Mobile Animus",
+                    "Tyranno Smorcus",
+                    "Urban Sentry"
+                ],
+                [
+                    "Bombarder",
+                    "Innervi Field",
+                    "Photonic Fibroid",
+                    "Mega Drone"
+                ]
+            ]
+        }
+    },
+    "chatInfo": {},
+    "versionInfo": {
+        "serverVersion": 623,
+        "playerVersions": [
+            "",
+            ""
+        ]
+    },
+    "seed": 893437323,
+    "ratingInfo": {
+        "scoreChanges": [
+            279,
+            91
+        ],
+        "finalRatings": [
+            {
+                "displayRating": 2135.7280376648214,
+                "winLastLast": false,
+                "dominionELO": 1200,
+                "winLast": false,
+                "peakAdjustedShalevU": 1891.2699552045224,
+                "shalevV": 3920.9814892512986,
+                "shalevU": 1785.7280376648214,
+                "tier": 10,
+                "customGamesPlayed": 695,
+                "tierPercent": 0,
+                "score": {
+                    "23": 1381363
+                },
+                "casualGamesWon": 0,
+                "hStars": 10,
+                "version": 0,
+                "exp": 1645,
+                "ratedGamesPlayed": 7844,
+                "botGamesPlayed": 2785
+            },
+            {
+                "displayRating": 1873.5144149809978,
+                "winLastLast": false,
+                "dominionELO": 1200,
+                "winLast": false,
+                "peakAdjustedShalevU": 1606.0541084644283,
+                "shalevV": 5406.638446688106,
+                "shalevU": 1523.5144149809978,
+                "tier": 10,
+                "customGamesPlayed": 95,
+                "tierPercent": 0,
+                "score": {
+                    "23": 3038857
+                },
+                "casualGamesWon": 0,
+                "hStars": 96,
+                "version": 0,
+                "exp": 2044499,
+                "ratedGamesPlayed": 13602,
+                "botGamesPlayed": 31
+            }
+        ],
+        "ratingChanges": [
+            [
+                3.80095634525901,
+                -18.9581018206286
+            ],
+            [
+                -5.280336478413346,
+                -66.7753091504137
+            ]
+        ],
+        "initialRatings": [
+            {
+                "version": 0,
+                "displayRating": 2131.9270813195626,
+                "winLastLast": false,
+                "dominionELO": 1200,
+                "winLast": false,
+                "peakAdjustedShalevU": 1891.2699552045224,
+                "shalevV": 3939.939591071927,
+                "shalevU": 1781.9270813195624,
+                "tier": 10,
+                "ratedGamesPlayed": 7843,
+                "tierPercent": 0,
+                "casualGamesWon": 0,
+                "hStars": 10,
+                "score": {
+                    "23": 1381084
+                },
+                "exp": 1645,
+                "customGamesPlayed": 695,
+                "botGamesPlayed": 2785
+            },
+            {
+                "version": 0,
+                "displayRating": 1878.7947514594111,
+                "winLastLast": false,
+                "dominionELO": 1200,
+                "winLast": false,
+                "peakAdjustedShalevU": 1606.0541084644283,
+                "shalevV": 5473.41375583852,
+                "shalevU": 1528.7947514594111,
+                "tier": 10,
+                "ratedGamesPlayed": 13601,
+                "tierPercent": 0,
+                "casualGamesWon": 0,
+                "hStars": 96,
+                "score": {
+                    "23": 3038766
+                },
+                "exp": 2044499,
+                "customGamesPlayed": 95,
+                "botGamesPlayed": 31
+            }
+        ]
+    },
+    "endTime": 1532955756.487255
+}
