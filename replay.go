@@ -12,8 +12,8 @@ type Replay struct {
 	Code          string   `json:"code"`
 	StartTimeUnix float64  `json:"startTime"`
 	EndTimeUnix   float64  `json:"endTime"`
-	DeckInfo      Deck     `json:"deckInfo"`
-	PlayerInfo    []Player `json:"playerInfo"`
+	Deck          Deck     `json:"deckInfo"`
+	Players       []Player `json:"playerInfo"`
 	// CommandInfo  CmdInfo    `json:"commandInfo"`
 	TimeInfo     TimeInfo   `json:"timeInfo"`
 	RatingInfo   RatingInfo `json:"ratingInfo"`
@@ -25,32 +25,11 @@ type Replay struct {
 	RawHash      int        `json:"rawHash"`
 }
 
-// Deck represents a collection of units.
-type Deck struct {
-	MergedDeck []Unit          `json:"mergedDeck"`
-	Base       [][]interface{} `json:"base"`
-	DeckName   string          `json:"deckName"`
-	Randomizer [][]string      `json:"randomizer"`
-}
-
 // Unit represents a single deployable unit of play.
 type Unit struct {
 	Name    string `json:"name"`
 	UIName  string `json:"UIName,omitempty"`
 	BaseSet int    `json:"baseSet,omitempty"`
-}
-
-// Player contains information on a participating agent in a Prismata replay.
-type Player struct {
-	Name             string   `json:"name"`
-	DisplayName      string   `json:"displayName"`
-	ID               int      `json:"id"`
-	Bot              string   `json:"bot"`
-	AvatarFrame      string   `json:"avatarFrame"`
-	Portrait         string   `json:"portrait"`
-	Trophies         []string `json:"trophies"`
-	LoadingCompleted bool     `json:"loadingCompleted"`
-	PercentLoaded    float64  `json:"percentLoaded"`
 }
 
 // CmdInfo contains information on the sequence of commands executed by players

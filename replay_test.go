@@ -64,6 +64,7 @@ func TestParse(t *testing.T) {
 			if err != nil {
 				t.Fatal(err)
 			}
+			defer f.Close()
 			r, err := Decode(f)
 			assertError(t, err, tt.fail)
 
