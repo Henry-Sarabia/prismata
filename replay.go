@@ -173,7 +173,7 @@ func (r *Replay) StartTime() (time.Time, error) {
 	return time.Unix(int64(r.StartTimeUnix), 0), nil
 }
 
-// EndTime returns the time at which the match ended.
+// EndTime returns the time at which the match ended.k
 func (r *Replay) EndTime() (time.Time, error) {
 	e := r.EndTimeUnix
 	if e <= 0 {

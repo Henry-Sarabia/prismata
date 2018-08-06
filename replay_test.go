@@ -384,7 +384,7 @@ func TestPlayerOne(t *testing.T) {
 			false,
 		},
 		{
-			"Error: empty",
+			"Error: missing one player",
 			Replay{PlayerInfo: []PlayerInfo{}},
 			PlayerInfo{},
 			true,
@@ -392,32 +392,34 @@ func TestPlayerOne(t *testing.T) {
 	}
 
 	for _, tt := range cases {
-		p, err := tt.r.PlayerOne()
-		assertError(t, err, tt.fail)
+		t.Run(tt.name, func(t *testing.T) {
+			p, err := tt.r.PlayerOne()
+			assertError(t, err, tt.fail)
 
-		if tt.fail {
-			return
-		}
+			if tt.fail {
+				return
+			}
 
-		if p.Name != tt.exp.Name {
-			t.Errorf("got: <%v>, want: <%v>", p.Name, tt.exp.Name)
-		}
+			if p.Name != tt.exp.Name {
+				t.Errorf("got: <%v>, want: <%v>", p.Name, tt.exp.Name)
+			}
 
-		if p.ID != tt.exp.ID {
-			t.Errorf("got: <%v>, want: <%v>", p.ID, tt.exp.ID)
-		}
+			if p.ID != tt.exp.ID {
+				t.Errorf("got: <%v>, want: <%v>", p.ID, tt.exp.ID)
+			}
 
-		if p.LoadingCompleted != tt.exp.LoadingCompleted {
-			t.Errorf("got: <%v>, want: <%v>", p.LoadingCompleted, tt.exp.LoadingCompleted)
-		}
+			if p.LoadingCompleted != tt.exp.LoadingCompleted {
+				t.Errorf("got: <%v>, want: <%v>", p.LoadingCompleted, tt.exp.LoadingCompleted)
+			}
 
-		if p.Bot != tt.exp.Bot {
-			t.Errorf("got: <%v>, want: <%v>", p.Bot, tt.exp.Bot)
-		}
+			if p.Bot != tt.exp.Bot {
+				t.Errorf("got: <%v>, want: <%v>", p.Bot, tt.exp.Bot)
+			}
 
-		if p.PercentLoaded != tt.exp.PercentLoaded {
-			t.Errorf("got: <%v>, want: <%v>", p.PercentLoaded, tt.exp.PercentLoaded)
-		}
+			if p.PercentLoaded != tt.exp.PercentLoaded {
+				t.Errorf("got: <%v>, want: <%v>", p.PercentLoaded, tt.exp.PercentLoaded)
+			}
+		})
 	}
 }
 
@@ -498,7 +500,13 @@ func TestPlayerTwo(t *testing.T) {
 			false,
 		},
 		{
-			"Error: empty",
+			"Error: missing one player",
+			Replay{PlayerInfo: []PlayerInfo{PlayerInfo{}}},
+			PlayerInfo{},
+			true,
+		},
+		{
+			"Error: missing two players",
 			Replay{PlayerInfo: []PlayerInfo{}},
 			PlayerInfo{},
 			true,
@@ -506,31 +514,33 @@ func TestPlayerTwo(t *testing.T) {
 	}
 
 	for _, tt := range cases {
-		p, err := tt.r.PlayerTwo()
-		assertError(t, err, tt.fail)
+		t.Run(tt.name, func(t *testing.T) {
+			p, err := tt.r.PlayerTwo()
+			assertError(t, err, tt.fail)
 
-		if tt.fail {
-			return
-		}
+			if tt.fail {
+				return
+			}
 
-		if p.Name != tt.exp.Name {
-			t.Errorf("got: <%v>, want: <%v>", p.Name, tt.exp.Name)
-		}
+			if p.Name != tt.exp.Name {
+				t.Errorf("got: <%v>, want: <%v>", p.Name, tt.exp.Name)
+			}
 
-		if p.ID != tt.exp.ID {
-			t.Errorf("got: <%v>, want: <%v>", p.ID, tt.exp.ID)
-		}
+			if p.ID != tt.exp.ID {
+				t.Errorf("got: <%v>, want: <%v>", p.ID, tt.exp.ID)
+			}
 
-		if p.LoadingCompleted != tt.exp.LoadingCompleted {
-			t.Errorf("got: <%v>, want: <%v>", p.LoadingCompleted, tt.exp.LoadingCompleted)
-		}
+			if p.LoadingCompleted != tt.exp.LoadingCompleted {
+				t.Errorf("got: <%v>, want: <%v>", p.LoadingCompleted, tt.exp.LoadingCompleted)
+			}
 
-		if p.Bot != tt.exp.Bot {
-			t.Errorf("got: <%v>, want: <%v>", p.Bot, tt.exp.Bot)
-		}
+			if p.Bot != tt.exp.Bot {
+				t.Errorf("got: <%v>, want: <%v>", p.Bot, tt.exp.Bot)
+			}
 
-		if p.PercentLoaded != tt.exp.PercentLoaded {
-			t.Errorf("got: <%v>, want: <%v>", p.PercentLoaded, tt.exp.PercentLoaded)
-		}
+			if p.PercentLoaded != tt.exp.PercentLoaded {
+				t.Errorf("got: <%v>, want: <%v>", p.PercentLoaded, tt.exp.PercentLoaded)
+			}
+		})
 	}
 }
