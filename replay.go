@@ -9,15 +9,15 @@ import (
 
 // Replay contains information on the replay of a Prismata match.
 type Replay struct {
-	Code          string   `json:"code"`
-	StartTimeUnix float64  `json:"startTime"`
-	EndTimeUnix   float64  `json:"endTime"`
-	Deck          Deck     `json:"deckInfo"`
-	Players       []Player `json:"playerInfo"`
+	Code          string       `json:"code"`
+	StartTimeUnix float64      `json:"startTime"`
+	EndTimeUnix   float64      `json:"endTime"`
+	Deck          Deck         `json:"deckInfo"`
+	PlayerInfo    []PlayerInfo `json:"playerInfo"`
 	// CommandInfo  CmdInfo    `json:"commandInfo"`
 	TimeInfo     TimeInfo   `json:"timeInfo"`
 	RatingInfo   RatingInfo `json:"ratingInfo"`
-	Result       int        `json:"result"`
+	Result       int        `json:"result"` // 0=p1, 1=p2, 2=draw
 	VersionInfo  Version    `json:"versionInfo"`
 	Seed         int        `json:"seed"`
 	EndCondition int        `json:"endCondition"`
@@ -30,6 +30,19 @@ type Unit struct {
 	Name    string `json:"name"`
 	UIName  string `json:"UIName,omitempty"`
 	BaseSet int    `json:"baseSet,omitempty"`
+}
+
+// PlayerInfo contains information on a participating agent in a Prismata replay.
+type PlayerInfo struct {
+	Name             string   `json:"name"`
+	DisplayName      string   `json:"displayName"`
+	ID               int      `json:"id"`
+	Bot              string   `json:"bot"`
+	AvatarFrame      string   `json:"avatarFrame"`
+	Portrait         string   `json:"portrait"`
+	Trophies         []string `json:"trophies"`
+	LoadingCompleted bool     `json:"loadingCompleted"`
+	PercentLoaded    float64  `json:"percentLoaded"`
 }
 
 // CmdInfo contains information on the sequence of commands executed by players
@@ -128,14 +141,14 @@ func Decode(r io.Reader) (*Replay, error) {
 
 // Duration returns the duration of the replay.
 func (r *Replay) Duration() (time.Duration, error) {
-	if r.StartTimeUnix == 0 {
-		return 0, errors.New("missing start time")
+	start, err := r.StartTime()
+	if err != nil {
+		return 0, err
 	}
-	if r.EndTimeUnix == 0 {
-		return 0, errors.New("missing end time")
+	end, err := r.EndTime()
+	if err != nil {
+		return 0, err
 	}
-	start := r.StartTime()
-	end := r.EndTime()
 
 	return duration(start, end), nil
 }
@@ -152,11 +165,37 @@ func duration(a, b time.Time) time.Duration {
 }
 
 // StartTime returns the time at which the match began.
-func (r *Replay) StartTime() time.Time {
-	return time.Unix(int64(r.StartTimeUnix), 0)
+func (r *Replay) StartTime() (time.Time, error) {
+	s := r.StartTimeUnix
+	if s <= 0 {
+		return time.Time{}, errors.New("missing start time")
+	}
+	return time.Unix(int64(r.StartTimeUnix), 0), nil
 }
 
 // EndTime returns the time at which the match ended.
-func (r *Replay) EndTime() time.Time {
-	return time.Unix(int64(r.EndTimeUnix), 0)
+func (r *Replay) EndTime() (time.Time, error) {
+	e := r.EndTimeUnix
+	if e <= 0 {
+		return time.Time{}, errors.New("missing end time")
+	}
+	return time.Unix(int64(r.EndTimeUnix), 0), nil
+}
+
+// PlayerOne returns player info for the first player.
+func (r *Replay) PlayerOne() (*PlayerInfo, error) {
+	if len(r.PlayerInfo) < 1 {
+		return nil, errors.New("missing player one info")
+	}
+
+	return &r.PlayerInfo[0], nil
+}
+
+// PlayerTwo returns player info for the second player.
+func (r *Replay) PlayerTwo() (*PlayerInfo, error) {
+	if len(r.PlayerInfo) < 2 {
+		return nil, errors.New("missing player two info")
+	}
+
+	return &r.PlayerInfo[1], nil
 }

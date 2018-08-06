@@ -13,9 +13,9 @@ import (
 
 const (
 	root        = "http://saved-games-alpha.s3-website-us-east-1.amazonaws.com/"
-	replaycode1 = "ib0Qt-pp8PL"
-	replaycode2 = "VyrET-IGxyL"
-	replaycode3 = "yjUKQ-HzFRz"
+	replaycode1 = "ib0Qt-pp8PL" //p1
+	replaycode2 = "VyrET-IGxyL" //p1
+	replaycode3 = "yjUKQ-HzFRz" //draw
 	extension   = ".json.gz"
 )
 

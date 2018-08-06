@@ -164,6 +164,12 @@ func TestReplayDuration(t *testing.T) {
 			0,
 			true,
 		},
+		{
+			"Error: empty start and end time",
+			Replay{},
+			0,
+			true,
+		},
 	}
 
 	for _, tt := range cases {
@@ -187,34 +193,57 @@ func TestStartTime(t *testing.T) {
 		name string
 		r    Replay
 		exp  time.Time
+		fail bool
 	}{
 		{
 			"Pass: replay 1",
 			Replay{StartTimeUnix: 1521091944.949862},
 			time.Unix(int64(1521091944), 0),
+			false,
 		},
 		{
 			"Pass: replay 2",
 			Replay{StartTimeUnix: 1532955317.245488},
 			time.Unix(int64(1532955317), 0),
+			false,
 		},
 		{
 			"Pass: replay 3",
 			Replay{StartTimeUnix: 1533168612.190871},
 			time.Unix(int64(1533168612), 0),
+			false,
 		},
 		{
 			"Error: zero start time",
 			Replay{StartTimeUnix: 0},
-			time.Unix(0, 0),
+			time.Time{},
+			true,
+		},
+		{
+			"Error: negative start time",
+			Replay{StartTimeUnix: -9999},
+			time.Time{},
+			true,
+		},
+		{
+			"Error: empty start time",
+			Replay{},
+			time.Time{},
+			true,
 		},
 	}
 
 	for _, tt := range cases {
 		t.Run(tt.name, func(t *testing.T) {
-			st := tt.r.StartTime()
-			if st != tt.exp {
-				t.Errorf("got: <%v>, want: <%v>", st, tt.exp)
+			s, err := tt.r.StartTime()
+			assertError(t, err, tt.fail)
+
+			if tt.fail {
+				return
+			}
+
+			if s != tt.exp {
+				t.Errorf("got: <%v>, want: <%v>", s, tt.exp)
 			}
 		})
 	}
@@ -225,35 +254,283 @@ func TestEndTime(t *testing.T) {
 		name string
 		r    Replay
 		exp  time.Time
+		fail bool
 	}{
 		{
 			"Pass: replay 1",
 			Replay{EndTimeUnix: 1521092570.323161},
 			time.Unix(int64(1521092570), 0),
+			false,
 		},
 		{
 			"Pass: replay 2",
 			Replay{EndTimeUnix: 1532955756.487255},
 			time.Unix(int64(1532955756), 0),
+			false,
 		},
 		{
 			"Pass: replay 3",
 			Replay{EndTimeUnix: 1533169252.757027},
 			time.Unix(int64(1533169252), 0),
+			false,
 		},
 		{
 			"Error: zero end time",
 			Replay{EndTimeUnix: 0},
-			time.Unix(0, 0),
+			time.Time{},
+			true,
+		},
+		{
+			"Error: negative end time",
+			Replay{EndTimeUnix: -9999},
+			time.Time{},
+			true,
+		},
+		{
+			"Error: empty end time",
+			Replay{},
+			time.Time{},
+			true,
 		},
 	}
 
 	for _, tt := range cases {
 		t.Run(tt.name, func(t *testing.T) {
-			st := tt.r.EndTime()
-			if st != tt.exp {
-				t.Errorf("got: <%v>, want: <%v>", st, tt.exp)
+			e, err := tt.r.EndTime()
+			assertError(t, err, tt.fail)
+
+			if tt.fail {
+				return
+			}
+
+			if e != tt.exp {
+				t.Errorf("got: <%v>, want: <%v>", e, tt.exp)
 			}
 		})
+	}
+}
+
+func TestPlayerOne(t *testing.T) {
+	var cases = []struct {
+		name string
+		r    Replay
+		exp  PlayerInfo
+		fail bool
+	}{
+		{
+			"Pass: replay 1",
+			Replay{
+				PlayerInfo: []PlayerInfo{
+					PlayerInfo{
+						Name:             "Lifecoach",
+						ID:               22975,
+						LoadingCompleted: true,
+						Bot:              "",
+						PercentLoaded:    1.0,
+					},
+				},
+			},
+			PlayerInfo{
+				Name:             "Lifecoach",
+				ID:               22975,
+				LoadingCompleted: true,
+				Bot:              "",
+				PercentLoaded:    1.0,
+			},
+			false,
+		},
+		{
+			"Pass: replay 2",
+			Replay{
+				PlayerInfo: []PlayerInfo{
+					PlayerInfo{
+						Name:             "Yujiri",
+						ID:               22033,
+						LoadingCompleted: true,
+						Bot:              "",
+						PercentLoaded:    1.0,
+					},
+				},
+			},
+			PlayerInfo{
+				Name:             "Yujiri",
+				ID:               22033,
+				LoadingCompleted: true,
+				Bot:              "",
+				PercentLoaded:    1.0,
+			},
+			false,
+		},
+		{
+			"Pass: replay 3",
+			Replay{
+				PlayerInfo: []PlayerInfo{
+					PlayerInfo{
+						Name:             "sceptal",
+						ID:               33976,
+						LoadingCompleted: true,
+						Bot:              "",
+						PercentLoaded:    1.0,
+					},
+				},
+			},
+			PlayerInfo{
+				Name:             "sceptal",
+				ID:               33976,
+				LoadingCompleted: true,
+				Bot:              "",
+				PercentLoaded:    1.0,
+			},
+			false,
+		},
+		{
+			"Error: empty",
+			Replay{PlayerInfo: []PlayerInfo{}},
+			PlayerInfo{},
+			true,
+		},
+	}
+
+	for _, tt := range cases {
+		p, err := tt.r.PlayerOne()
+		assertError(t, err, tt.fail)
+
+		if tt.fail {
+			return
+		}
+
+		if p.Name != tt.exp.Name {
+			t.Errorf("got: <%v>, want: <%v>", p.Name, tt.exp.Name)
+		}
+
+		if p.ID != tt.exp.ID {
+			t.Errorf("got: <%v>, want: <%v>", p.ID, tt.exp.ID)
+		}
+
+		if p.LoadingCompleted != tt.exp.LoadingCompleted {
+			t.Errorf("got: <%v>, want: <%v>", p.LoadingCompleted, tt.exp.LoadingCompleted)
+		}
+
+		if p.Bot != tt.exp.Bot {
+			t.Errorf("got: <%v>, want: <%v>", p.Bot, tt.exp.Bot)
+		}
+
+		if p.PercentLoaded != tt.exp.PercentLoaded {
+			t.Errorf("got: <%v>, want: <%v>", p.PercentLoaded, tt.exp.PercentLoaded)
+		}
+	}
+}
+
+func TestPlayerTwo(t *testing.T) {
+	var cases = []struct {
+		name string
+		r    Replay
+		exp  PlayerInfo
+		fail bool
+	}{
+		{
+			"Pass: replay 1",
+			Replay{
+				PlayerInfo: []PlayerInfo{
+					PlayerInfo{},
+					PlayerInfo{
+						Name:             "NekoNoire",
+						ID:               15065,
+						LoadingCompleted: true,
+						Bot:              "",
+						PercentLoaded:    1.0,
+					},
+				},
+			},
+			PlayerInfo{
+				Name:             "NekoNoire",
+				ID:               15065,
+				LoadingCompleted: true,
+				Bot:              "",
+				PercentLoaded:    1.0,
+			},
+			false,
+		},
+		{
+			"Pass: replay 2",
+			Replay{
+				PlayerInfo: []PlayerInfo{
+					PlayerInfo{},
+					PlayerInfo{
+						Name:             "meoweth",
+						ID:               11961,
+						LoadingCompleted: true,
+						Bot:              "",
+						PercentLoaded:    1.0,
+					},
+				},
+			},
+			PlayerInfo{
+				Name:             "meoweth",
+				ID:               11961,
+				LoadingCompleted: true,
+				Bot:              "",
+				PercentLoaded:    1.0,
+			},
+			false,
+		},
+		{
+			"Pass: replay 3",
+			Replay{
+				PlayerInfo: []PlayerInfo{
+					PlayerInfo{},
+					PlayerInfo{
+						Name:             "TheTrumpWall",
+						ID:               20700,
+						LoadingCompleted: true,
+						Bot:              "",
+						PercentLoaded:    1.0,
+					},
+				},
+			},
+			PlayerInfo{
+				Name:             "TheTrumpWall",
+				ID:               20700,
+				LoadingCompleted: true,
+				Bot:              "",
+				PercentLoaded:    1.0,
+			},
+			false,
+		},
+		{
+			"Error: empty",
+			Replay{PlayerInfo: []PlayerInfo{}},
+			PlayerInfo{},
+			true,
+		},
+	}
+
+	for _, tt := range cases {
+		p, err := tt.r.PlayerTwo()
+		assertError(t, err, tt.fail)
+
+		if tt.fail {
+			return
+		}
+
+		if p.Name != tt.exp.Name {
+			t.Errorf("got: <%v>, want: <%v>", p.Name, tt.exp.Name)
+		}
+
+		if p.ID != tt.exp.ID {
+			t.Errorf("got: <%v>, want: <%v>", p.ID, tt.exp.ID)
+		}
+
+		if p.LoadingCompleted != tt.exp.LoadingCompleted {
+			t.Errorf("got: <%v>, want: <%v>", p.LoadingCompleted, tt.exp.LoadingCompleted)
+		}
+
+		if p.Bot != tt.exp.Bot {
+			t.Errorf("got: <%v>, want: <%v>", p.Bot, tt.exp.Bot)
+		}
+
+		if p.PercentLoaded != tt.exp.PercentLoaded {
+			t.Errorf("got: <%v>, want: <%v>", p.PercentLoaded, tt.exp.PercentLoaded)
+		}
 	}
 }
