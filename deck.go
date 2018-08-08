@@ -1,4 +1,4 @@
-package main
+package prismata
 
 // Deck represents a collection of units.
 type Deck struct {

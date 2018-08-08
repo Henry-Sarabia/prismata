@@ -1,4 +1,4 @@
-package main
+package prismata
 
 import (
 	"bytes"
@@ -7,8 +7,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-
-	spew "github.com/davecgh/go-spew/spew"
 )
 
 const (
@@ -23,10 +21,12 @@ func init() {
 	log.SetFlags(log.Llongfile)
 }
 
-func main() {
+// Get returns the replay corresponding to the provided code from the Prismata
+// AWS server.
+func Get(code string) (*Replay, error) {
 	c := http.DefaultClient
 
-	req, err := request()
+	req, err := request(code)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -45,13 +45,12 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	spew.Dump(replay)
 
-	return
+	return replay, nil
 }
 
-func request() (*http.Request, error) {
-	req, err := http.NewRequest("GET", root+replaycode1+extension, nil)
+func request(code string) (*http.Request, error) {
+	req, err := http.NewRequest("GET", root+code+extension, nil)
 	if err != nil {
 		return nil, err
 	}

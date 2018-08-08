@@ -1,4 +1,4 @@
-package main
+package prismata
 
 import (
 	"encoding/json"
@@ -17,7 +17,7 @@ type Replay struct {
 	// CommandInfo  CmdInfo    `json:"commandInfo"`
 	TimeInfo     TimeInfo   `json:"timeInfo"`
 	RatingInfo   RatingInfo `json:"ratingInfo"`
-	Result       int        `json:"result"` // 0=p1, 1=p2, 2=draw
+	Result       Result     `json:"result"` // 0=p1, 1=p2, 2=draw
 	VersionInfo  Version    `json:"versionInfo"`
 	Seed         int        `json:"seed"`
 	EndCondition int        `json:"endCondition"`
@@ -199,3 +199,13 @@ func (r *Replay) PlayerTwo() (*PlayerInfo, error) {
 
 	return &r.PlayerInfo[1], nil
 }
+
+// type PlayerRating struct {
+// 	Initial Rating
+// 	Final Rating
+// 	Delta []float64
+// 	ScoreDelta int
+// }
+// func (r *RatingInfo) PlayerOne() (*PlayerRating, error) {
+
+// }
